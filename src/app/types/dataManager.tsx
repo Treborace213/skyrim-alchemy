@@ -28,7 +28,7 @@ export class DataManager {
     baseIngredients: Ingredient[] = [];
     anniversaryIngredients: Ingredient[] = [];
 
-    async loadEffects(): Promise<void> {
+    private async loadEffects(): Promise<void> {
         try {
             const filePath = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/effects.json`;
             const response = await fetch(filePath);
@@ -70,11 +70,11 @@ export class DataManager {
         }
     }
 
-    async loadBaseIngredients() {
+    private async loadBaseIngredients() {
         this.baseIngredients = await this.getIngredients(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/legendaryAndSpecialEdition.json`)
     }
 
-    async loadAnniversaryIngredients() {
+    private async loadAnniversaryIngredients() {
         this.anniversaryIngredients = await this.getIngredients(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/anniversaryEdition.json`);
     }
 
