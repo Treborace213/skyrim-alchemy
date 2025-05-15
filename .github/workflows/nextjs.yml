@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Load environment variables
+        env:
+          FILE_PATH: ${{ secrets.FILE_PATH }}
+        run: echo "$FILE_PATH" >> $GITHUB_ENV
       - name: Detect package manager
         id: detect-package-manager
         run: |
