@@ -1,0 +1,542 @@
+[
+    {
+        "Effect": "Cure Disease",
+        "IsPos": true,
+        "Description": "Cures all diseases.",
+        "Base Cost": 0.5,
+        "Base Mag": 5,
+        "Base Dur": 0,
+        "CostAt100": 21
+    },
+    {
+        "Effect": "Cure Poison",
+        "IsPos": true,
+        "Description": "Stops poison's continuing effects.",
+        "Base Cost": 0.2,
+        "Base Mag": 2,
+        "Base Dur": 0,
+        "CostAt100": 3
+    },
+    {
+        "Effect": "Damage Health",
+        "IsPos": false,
+        "Description": "Causes <mag> points of poison damage.",
+        "Base Cost": 3.0,
+        "Base Mag": 2,
+        "Base Dur": 1,
+        "CostAt100": 3
+    },
+    {
+        "Effect": "Damage Magicka",
+        "IsPos": false,
+        "Description": "Drains the target's Magicka by <mag> points.",
+        "Base Cost": 2.2,
+        "Base Mag": 3,
+        "Base Dur": 0,
+        "CostAt100": 52
+    },
+    {
+        "Effect": "Damage Magicka Regen",
+        "IsPos": false,
+        "Description": "Decrease the target's Magicka regeneration by <mag>% for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 100,
+        "Base Dur": 5,
+        "CostAt100": 265
+    },
+    {
+        "Effect": "Damage Stamina",
+        "IsPos": false,
+        "Description": "Drain the target's Stamina by <mag> points.",
+        "Base Cost": 1.8,
+        "Base Mag": 3,
+        "Base Dur": 0,
+        "CostAt100": 43
+    },
+    {
+        "Effect": "Damage Stamina Regen",
+        "IsPos": false,
+        "Description": "Decrease the target's Stamina regeneration by <mag>% for <dur> seconds.",
+        "Base Cost": 0.3,
+        "Base Mag": 100,
+        "Base Dur": 5,
+        "CostAt100": 159
+    },
+    {
+        "Effect": "Fear",
+        "IsPos": false,
+        "Description": "Creatures and people up to level <mag> flee from combat for <dur> seconds.",
+        "Base Cost": 5.0,
+        "Base Mag": 1,
+        "Base Dur": 30,
+        "CostAt100": 120
+    },
+    {
+        "Effect": "Fortify Alteration",
+        "IsPos": true,
+        "Description": "Alteration spells last <mag>% longer for <dur> seconds.",
+        "Base Cost": 0.2,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 47
+    },
+    {
+        "Effect": "Fortify Barter",
+        "IsPos": true,
+        "Description": "You haggle for <mag>% better prices for <dur> seconds.",
+        "Base Cost": 2.0,
+        "Base Mag": 1,
+        "Base Dur": 30,
+        "CostAt100": 48
+    },
+    {
+        "Effect": "Fortify Block",
+        "IsPos": true,
+        "Description": "Blocking absorbs <mag>% more damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify Carry Weight",
+        "IsPos": true,
+        "Description": "Carrying capacity increases by <mag> for <dur> seconds.",
+        "Base Cost": 0.15,
+        "Base Mag": 4,
+        "Base Dur": 300,
+        "CostAt100": 208
+    },
+    {
+        "Effect": "Fortify Conjuration",
+        "IsPos": true,
+        "Description": "Conjurations spells last <mag>% longer for <dur> seconds.",
+        "Base Cost": 0.25,
+        "Base Mag": 5,
+        "Base Dur": 60,
+        "CostAt100": 75
+    },
+    {
+        "Effect": "Fortify Destruction",
+        "IsPos": true,
+        "Description": "Destruction spells are <mag>% stronger for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 5,
+        "Base Dur": 60,
+        "CostAt100": 151
+    },
+    {
+        "Effect": "Fortify Enchanting",
+        "IsPos": true,
+        "Description": "For <dur> seconds, items are enchanted <mag>% stronger.",
+        "Base Cost": 0.6,
+        "Base Mag": 1,
+        "Base Dur": 30,
+        "CostAt100": 14
+    },
+    {
+        "Effect": "Fortify Health",
+        "IsPos": true,
+        "Description": "Health is increased by <mag> points for <dur> seconds.",
+        "Base Cost": 0.35,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 82
+    },
+    {
+        "Effect": "Fortify Heavy Armor",
+        "IsPos": true,
+        "Description": "Increase Heavy Armor skill by <mag> points for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 2,
+        "Base Dur": 60,
+        "CostAt100": 55
+    },
+    {
+        "Effect": "Fortify Illusion",
+        "IsPos": true,
+        "Description": "Illusion spells are <mag>% stronger for <dur> seconds.",
+        "Base Cost": 0.4,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 94
+    },
+    {
+        "Effect": "Fortify Light Armor",
+        "IsPos": true,
+        "Description": "Increases Light Armor skill by <mag> points for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 2,
+        "Base Dur": 60,
+        "CostAt100": 55
+    },
+    {
+        "Effect": "Fortify Lockpicking",
+        "IsPos": true,
+        "Description": "Lockpicking is <mag>% easier for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 2,
+        "Base Dur": 30,
+        "CostAt100": 25
+    },
+    {
+        "Effect": "Fortify Magicka",
+        "IsPos": true,
+        "Description": "Magicka is increased by <mag> points for <dur> seconds.",
+        "Base Cost": 0.3,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 71
+    },
+    {
+        "Effect": "Fortify Marksman",
+        "IsPos": true,
+        "Description": "Bows do <mag>% more damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify One-handed",
+        "IsPos": true,
+        "Description": "One-handed weapons do <mag>% more damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify Persuasion",
+        "IsPos": true,
+        "Description": "+<mag> Speechcraft for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 1,
+        "Base Dur": 30,
+        "CostAt100": null
+    },
+    {
+        "Effect": "Fortify Pickpocket",
+        "IsPos": true,
+        "Description": "Pickpocketing is <mag>% easier for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify Restoration",
+        "IsPos": true,
+        "Description": "Restoration spells are <mag>% stronger for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify Smithing",
+        "IsPos": true,
+        "Description": "For <dur> seconds, weapon and armor improving is <mag>% better.",
+        "Base Cost": 0.75,
+        "Base Mag": 4,
+        "Base Dur": 30,
+        "CostAt100": 82
+    },
+    {
+        "Effect": "Fortify Sneak",
+        "IsPos": true,
+        "Description": "You are <mag>% harder to detect for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Fortify Stamina",
+        "IsPos": true,
+        "Description": "Stamina is increased by <mag> points for <dur> seconds.",
+        "Base Cost": 0.3,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 71
+    },
+    {
+        "Effect": "Fortify Two-handed",
+        "IsPos": true,
+        "Description": "Two-handed weapons do <mag>% more damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Frenzy",
+        "IsPos": false,
+        "Description": "Creatures and people up to level <mag> will attack anything nearby for <dur> seconds.",
+        "Base Cost": 15.0,
+        "Base Mag": 1,
+        "Base Dur": 10,
+        "CostAt100": 107
+    },
+    {
+        "Effect": "Invisibility",
+        "IsPos": true,
+        "Description": "Invisibility for <dur> seconds.",
+        "Base Cost": 100.0,
+        "Base Mag": 0,
+        "Base Dur": 4,
+        "CostAt100": 261
+    },
+    {
+        "Effect": "Light",
+        "IsPos": true,
+        "Description": "Emits a small light that lasts for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 0,
+        "Base Dur": 60,
+        "CostAt100": 25
+    },
+    {
+        "Effect": "Lingering Damage Health",
+        "IsPos": false,
+        "Description": "Causes <mag> points of poison damage for <dur> seconds.",
+        "Base Cost": 12.0,
+        "Base Mag": 1,
+        "Base Dur": 10,
+        "CostAt100": 86
+    },
+    {
+        "Effect": "Lingering Damage Magicka",
+        "IsPos": false,
+        "Description": "Drains the target's Magicka by <mag> points per second for <dur> seconds.",
+        "Base Cost": 10.0,
+        "Base Mag": 1,
+        "Base Dur": 10,
+        "CostAt100": 71
+    },
+    {
+        "Effect": "Lingering Damage Stamina",
+        "IsPos": false,
+        "Description": "Drain the target's Stamina by <mag> points per second for <dur> seconds.",
+        "Base Cost": 1.8,
+        "Base Mag": 1,
+        "Base Dur": 10,
+        "CostAt100": 12
+    },
+    {
+        "Effect": "Night Eye",
+        "IsPos": true,
+        "Description": "Improved night vision for <dur> seconds.",
+        "Base Cost": 0.75,
+        "Base Mag": 0,
+        "Base Dur": 60,
+        "CostAt100": 38
+    },
+    {
+        "Effect": "Paralysis",
+        "IsPos": false,
+        "Description": "Target is paralyzed for <dur> seconds.",
+        "Base Cost": 500.0,
+        "Base Mag": 0,
+        "Base Dur": 1,
+        "CostAt100": 285
+    },
+    {
+        "Effect": "Ravage Health",
+        "IsPos": false,
+        "Description": "Causes <mag> points of concentrated poison damage.",
+        "Base Cost": 0.4,
+        "Base Mag": 2,
+        "Base Dur": 10,
+        "CostAt100": 6
+    },
+    {
+        "Effect": "Ravage Magicka",
+        "IsPos": false,
+        "Description": "Concentrated poison damages maximum magicka by <mag> points.",
+        "Base Cost": 1.0,
+        "Base Mag": 2,
+        "Base Dur": 10,
+        "CostAt100": 15
+    },
+    {
+        "Effect": "Ravage Stamina",
+        "IsPos": false,
+        "Description": "Concentrated poison damages maximum stamina by <mag> points.",
+        "Base Cost": 1.6,
+        "Base Mag": 2,
+        "Base Dur": 10,
+        "CostAt100": 24
+    },
+    {
+        "Effect": "Regenerate Health",
+        "IsPos": true,
+        "Description": "Health regenerates <mag>% faster for <dur> seconds.",
+        "Base Cost": 0.1,
+        "Base Mag": 5,
+        "Base Dur": 300,
+        "CostAt100": 177
+    },
+    {
+        "Effect": "Regenerate Magicka",
+        "IsPos": true,
+        "Description": "Magicka regenerates <mag>% faster for <dur> seconds.",
+        "Base Cost": 0.1,
+        "Base Mag": 5,
+        "Base Dur": 300,
+        "CostAt100": 177
+    },
+    {
+        "Effect": "Regenerate Stamina",
+        "IsPos": true,
+        "Description": "Stamina regenerates <mag>% faster for <dur> seconds.",
+        "Base Cost": 0.1,
+        "Base Mag": 5,
+        "Base Dur": 300,
+        "CostAt100": 177
+    },
+    {
+        "Effect": "Resist Fire",
+        "IsPos": true,
+        "Description": "Resist <mag>% of fire damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 3,
+        "Base Dur": 60,
+        "CostAt100": 86
+    },
+    {
+        "Effect": "Resist Frost",
+        "IsPos": true,
+        "Description": "Resist <mag>% of frost damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 3,
+        "Base Dur": 60,
+        "CostAt100": 86
+    },
+    {
+        "Effect": "Resist Magic",
+        "IsPos": true,
+        "Description": "Resist <mag>% of magic for <dur> seconds.",
+        "Base Cost": 1.0,
+        "Base Mag": 1,
+        "Base Dur": 60,
+        "CostAt100": 51
+    },
+    {
+        "Effect": "Resist Poison",
+        "IsPos": true,
+        "Description": "Resist <mag>% of poison for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 4,
+        "Base Dur": 60,
+        "CostAt100": 118
+    },
+    {
+        "Effect": "Resist Shock",
+        "IsPos": true,
+        "Description": "Resist <mag>% of shock damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 3,
+        "Base Dur": 60,
+        "CostAt100": 86
+    },
+    {
+        "Effect": "Restore Health",
+        "IsPos": true,
+        "Description": "Restore <mag> points of Health.",
+        "Base Cost": 0.5,
+        "Base Mag": 5,
+        "Base Dur": 0,
+        "CostAt100": 21
+    },
+    {
+        "Effect": "Restore Magicka",
+        "IsPos": true,
+        "Description": "Restore <mag> points of Magicka.",
+        "Base Cost": 0.6,
+        "Base Mag": 5,
+        "Base Dur": 0,
+        "CostAt100": 25
+    },
+    {
+        "Effect": "Restore Stamina",
+        "IsPos": true,
+        "Description": "Restore <mag> Stamina.",
+        "Base Cost": 0.6,
+        "Base Mag": 5,
+        "Base Dur": 0,
+        "CostAt100": 25
+    },
+    {
+        "Effect": "Slow",
+        "IsPos": false,
+        "Description": "Target moves at 50% speed for <dur> seconds.",
+        "Base Cost": 1.0,
+        "Base Mag": 50,
+        "Base Dur": 5,
+        "CostAt100": 247
+    },
+    {
+        "Effect": "Spell Absorption",
+        "IsPos": true,
+        "Description": "Absorb <mag>% of the magicka from hostile spells for <dur> seconds.",
+        "Base Cost": 0.1,
+        "Base Mag": 50,
+        "Base Dur": 60,
+        "CostAt100": 380
+    },
+    {
+        "Effect": "Waterbreathing",
+        "IsPos": true,
+        "Description": "Can breathe underwater for <dur> seconds.",
+        "Base Cost": 30.0,
+        "Base Mag": 0,
+        "Base Dur": 5,
+        "CostAt100": 100
+    },
+    {
+        "Effect": "Weakness to Fire",
+        "IsPos": false,
+        "Description": "Target is <mag>% weaker to fire damage for <dur> seconds.",
+        "Base Cost": 0.6,
+        "Base Mag": 3,
+        "Base Dur": 30,
+        "CostAt100": 48
+    },
+    {
+        "Effect": "Weakness to Frost",
+        "IsPos": false,
+        "Description": "Target is <mag>% weaker to frost damage for <dur> seconds.",
+        "Base Cost": 0.5,
+        "Base Mag": 3,
+        "Base Dur": 30,
+        "CostAt100": 40
+    },
+    {
+        "Effect": "Weakness to Magic",
+        "IsPos": false,
+        "Description": "Target is <mag>% weaker to magic for <dur> seconds.",
+        "Base Cost": 1.0,
+        "Base Mag": 2,
+        "Base Dur": 30,
+        "CostAt100": 51
+    },
+    {
+        "Effect": "Weakness to Poison",
+        "IsPos": false,
+        "Description": "Target is <mag>% weaker to poison for <dur> seconds.",
+        "Base Cost": 1.0,
+        "Base Mag": 2,
+        "Base Dur": 30,
+        "CostAt100": 51
+    },
+    {
+        "Effect": "Weakness to Shock",
+        "IsPos": false,
+        "Description": "Target is <mag>% weaker to shock damage for <dur> seconds.",
+        "Base Cost": 0.7,
+        "Base Mag": 3,
+        "Base Dur": 30,
+        "CostAt100": 56
+    }
+]

@@ -1,0 +1,3632 @@
+[
+    {
+        "name": "Abecean Longfin",
+        "effects": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.5,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Aloe Vera Leaves",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Khajiit Traders",
+        "garden": 2
+    },
+    {
+        "name": "Ancestor Moth Wing",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Ash Creep Cluster",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.25,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Ash Hopper Jelly",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.25,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Ashen Grass Pod",
+        "effects": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1.33,
+                "duration": 1,
+                "value": 1.36
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Bear Claws",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 0.78
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Bee",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 3,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Beehive Husk",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 1.0,
+        "merchant_avail": "None (Common)",
+        "garden": 0
+    },
+    {
+        "name": "Bleeding Crown",
+        "effects": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.3,
+        "merchant_avail": "Uncommon",
+        "garden": 3
+    },
+    {
+        "name": "Blisterwort",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 0.6,
+                "duration": 1,
+                "value": 0.57
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 12,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 4
+    },
+    {
+        "name": "Blue Butterfly Wing",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Blue Dartwing",
+        "effects": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Blue Mountain Flower",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "Boar Tusk",
+        "effects": [
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1.25,
+                "duration": 5.0,
+                "value": 7.5
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 5.0,
+                "value": 5.9
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.5,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Bone Meal",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.5,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Briar Heart",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.5,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Burnt Spriggan Wood",
+        "effects": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.5,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Butterfly Wing",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 3,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Canis Root",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 4
+    },
+    {
+        "name": "Charred Skeever Hide",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.5,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Chaurus Eggs",
+        "effects": [
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Chaurus Hunter Antennae",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Chicken's Egg",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.5,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Creep Cluster",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 5
+    },
+    {
+        "name": "Crimson Nirnroot",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 3.0,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 3.0,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.2,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Cyrodilic Spadetail",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.25,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Daedra Heart",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 250,
+        "weight": 0.5,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Deathbell",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 2.1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 4,
+        "weight": 0.1,
+        "merchant_avail": "Rare",
+        "garden": 3
+    },
+    {
+        "name": "Dragon's Tongue",
+        "effects": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 4
+    },
+    {
+        "name": "Dwarven Oil",
+        "effects": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Ectoplasm",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 25,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Elves Ear",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Emperor Parasol Moss",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.25,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Eye of Sabre Cat",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Falmer Ear",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Felsaad Tern Feathers",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Fire Salts",
+        "effects": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 50,
+        "weight": 0.25,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Fly Amanita",
+        "effects": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 4
+    },
+    {
+        "name": "Frost Mirriam",
+        "effects": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Frost Salts",
+        "effects": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 100,
+        "weight": 0.25,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Garlic",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.25,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Giant Lichen",
+        "effects": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 4
+    },
+    {
+        "name": "Giant's Toe",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 5.0,
+                "value": 5.9
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 1.0,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Gleamblossom",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Glow Dust",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.5,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Glowing Mushroom",
+        "effects": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.2,
+        "merchant_avail": "None",
+        "garden": 5
+    },
+    {
+        "name": "Grass Pod",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 3
+    },
+    {
+        "name": "Hagraven Claw",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.25,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Hagraven Feathers",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.1,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Hanging Moss",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Hawk Beak",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Hawk Feathers",
+        "effects": [
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Hawk's Egg",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.5,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Histcarp",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 6,
+        "weight": 0.25,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Honeycomb",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 0.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 1.0,
+        "merchant_avail": "None (Common)",
+        "garden": 0
+    },
+    {
+        "name": "Human Flesh",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.25,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Human Heart",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 0,
+        "weight": 1.0,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Ice Wraith Teeth",
+        "effects": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 30,
+        "weight": 0.25,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Imp Stool",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 0.6,
+                "duration": 1,
+                "value": 0.57
+            }
+        ],
+        "value": 0,
+        "weight": 0.3,
+        "merchant_avail": "Rare",
+        "garden": 4
+    },
+    {
+        "name": "Jazbay Grapes",
+        "effects": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.2,
+        "merchant_avail": "Rare",
+        "garden": 3
+    },
+    {
+        "name": "Juniper Berries",
+        "effects": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 4
+    },
+    {
+        "name": "Large Antlers",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 6.0,
+                "value": 1.75
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Lavender",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Conjuration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "Luna Moth Wing",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Moon Sugar",
+        "effects": [
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 50,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Mora Tapinella",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 4,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 3
+    },
+    {
+        "name": "Mudcrab Chitin",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.25,
+        "merchant_avail": "None (Common)",
+        "garden": 0
+    },
+    {
+        "name": "Namira's Rot",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 0,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 3
+    },
+    {
+        "name": "Netch Jelly",
+        "effects": [
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Stamina",
+                "magnitude": 2.0,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.5,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Nightshade",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 0.8,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 8,
+        "weight": 0.1,
+        "merchant_avail": "Rare",
+        "garden": 3
+    },
+    {
+        "name": "Nirnroot",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 12.6
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 10,
+        "weight": 0.2,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Nordic Barnacle",
+        "effects": [
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Orange Dartwing",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Pearl",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Rare)",
+        "garden": 0
+    },
+    {
+        "name": "Pine Thrush Egg",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.5,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Poison Bloom",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 1.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.25,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Powdered Mammoth Tusk",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fear",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Purple Mountain Flower",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Sneak",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "Red Mountain Flower",
+        "effects": [
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "River Betty",
+        "effects": [
+            {
+                "name": "Damage Health",
+                "magnitude": 2.5,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.25,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Rock Warbler Egg",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.5,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Sabre Cat Tooth",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Salmon Roe",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 0.4,
+                "duration": 1,
+                "value": 0.36
+            },
+            {
+                "name": "Waterbreathing",
+                "magnitude": 1,
+                "duration": 12.0,
+                "value": 15.4
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 12.5,
+                "duration": 0.08,
+                "value": 1.05
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.2,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Salt Pile",
+        "effects": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.2,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Scaly Pholiota",
+        "effects": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 4,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 5
+    },
+    {
+        "name": "Scathecraw",
+        "effects": [
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Silverside Perch",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.25,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Skeever Tail",
+        "effects": [
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Light Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 3,
+        "weight": 0.2,
+        "merchant_avail": "Common",
+        "garden": 0
+    },
+    {
+        "name": "Slaughterfish Egg",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Pickpocket",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 3,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Slaughterfish Scales",
+        "effects": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 3,
+        "weight": 0.1,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Small Antlers",
+        "effects": [
+            {
+                "name": "Weakness to Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Common)",
+        "garden": 0
+    },
+    {
+        "name": "Small Pearl",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify One-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Snowberries",
+        "effects": [
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 4,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 4
+    },
+    {
+        "name": "Spawn Ash",
+        "effects": [
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Fire",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 20,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Spider Egg",
+        "effects": [
+            {
+                "name": "Damage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Lockpicking",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Marksman",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Spriggan Sap",
+        "effects": [
+            {
+                "name": "Damage Magicka Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Enchanting",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Smithing",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Alteration",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.2,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Swamp Fungal Pod",
+        "effects": [
+            {
+                "name": "Resist Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Paralysis",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.25,
+        "merchant_avail": "Uncommon",
+        "garden": 3
+    },
+    {
+        "name": "Taproot",
+        "effects": [
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Illusion",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 0.5,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Thistle Branch",
+        "effects": [
+            {
+                "name": "Resist Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Poison",
+                "magnitude": 0.75,
+                "duration": 0.0,
+                "value": 0.1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "Torchbug Thorax",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Weakness to Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Trama Root",
+        "effects": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Slow",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.2,
+        "merchant_avail": "None",
+        "garden": 0
+    },
+    {
+        "name": "Troll Fat",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Two-handed",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Frenzy",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 15,
+        "weight": 1.0,
+        "merchant_avail": "Uncommon",
+        "garden": 0
+    },
+    {
+        "name": "Tundra Cotton",
+        "effects": [
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Block",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Barter",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 1,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 3
+    },
+    {
+        "name": "Vampire Dust",
+        "effects": [
+            {
+                "name": "Invisibility",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Regenerate Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Cure Disease",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 25,
+        "weight": 0.2,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Void Salts",
+        "effects": [
+            {
+                "name": "Weakness to Shock",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 125,
+        "weight": 0.2,
+        "merchant_avail": "Rare",
+        "garden": 0
+    },
+    {
+        "name": "Wheat",
+        "effects": [
+            {
+                "name": "Restore Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Lingering Damage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 5,
+        "weight": 0.1,
+        "merchant_avail": "Common",
+        "garden": 4
+    },
+    {
+        "name": "White Cap",
+        "effects": [
+            {
+                "name": "Weakness to Frost",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Heavy Armor",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Restore Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Ravage Magicka",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 0,
+        "weight": 0.3,
+        "merchant_avail": "Uncommon",
+        "garden": 2
+    },
+    {
+        "name": "Wisp Wrappings",
+        "effects": [
+            {
+                "name": "Restore Stamina",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Destruction",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Carry Weight",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Resist Magic",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None (Uncommon)",
+        "garden": 0
+    },
+    {
+        "name": "Yellow Mountain Flower",
+        "effects": [
+            {
+                "name": "Resist Poison",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Restoration",
+                "magnitude": 1.25,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Fortify Health",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            },
+            {
+                "name": "Damage Stamina Regen",
+                "magnitude": 1,
+                "duration": 1,
+                "value": 1
+            }
+        ],
+        "value": 2,
+        "weight": 0.1,
+        "merchant_avail": "None",
+        "garden": 0
+    }
+]
