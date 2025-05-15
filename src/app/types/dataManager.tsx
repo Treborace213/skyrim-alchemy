@@ -1,5 +1,27 @@
-import { Effect } from "./effect"
+import { Effect } from "./effect";
 import { Ingredient } from "./ingredient"
+
+interface JsonEffect {
+    Effect: string;
+    IsPos: boolean;
+    Description: string;
+    "Base Cost": number;
+    "Base Mag": number;
+    "Base Dur": number;
+    CostAt100: number;
+}
+
+interface JsonIngredientEffect {
+    name: string;
+    magnitude: number;
+    duration: number;
+    value: number;
+}
+
+interface JsonIngredient {
+    name: string;
+    effects: JsonIngredientEffect[];
+}
 
 export class DataManager {
     effects: Effect[] = [];
@@ -13,7 +35,7 @@ export class DataManager {
             if (!response.ok) throw new Error(`Network response was not ok for path: ${filePath} (Status: ${response.status})`);
             const json = await response.json();
 
-            this.effects = json.map((item: any) => ({
+            this.effects = json.map((item: JsonEffect) => ({
                 name: item.Effect,
                 isPos: item.IsPos,
                 description: item.Description,
@@ -33,9 +55,9 @@ export class DataManager {
             if (!response.ok) throw new Error(`Network response was not ok for path: ${filePath} (Status: ${response.status})`);
             const json = await response.json();
 
-            return json.map((item: any) => ({
+            return json.map((item: JsonIngredient) => ({
                 name: item.name,
-                effects: item.effects.map((effect: any) => ({
+                effects: item.effects.map((effect: JsonIngredientEffect) => ({
                     effect: this.effects.find((e: Effect) => e.name === effect.name),
                     magnitudeMult: effect.magnitude,
                     durationMult: effect.duration,
