@@ -1,5 +1,3 @@
-// components/EffectDisplayComponent.tsx
-
 import React from "react";
 import { Effect } from "../types/effect";
 import EffectDisplay from "./EffectDisplay";
