@@ -1,33 +1,24 @@
 'use client'
 
-import { useEffect, useState } from "react";
-import { DataManager, dataManager } from "../classes/DataManager";
 import IngredientsBlock from "../components/IngredientsBlock";
 import EffectsBlock from "../components/EffectsBlock";
+import useDataManager from "@/hooks/useDataManager";
 
 export default function Home() {
-  const [data, setData] = useState<DataManager | null>(null);
+  const { dataManager } = useDataManager();
 
-  useEffect(() => {
-    async function fetchEffects() {
-      await dataManager.loadData();
-      setData(dataManager);
-    }
-    fetchEffects();
-  }, []);
-
-  if (!data) {
-    return <div>Loading...</div>; // Show loading until data is fetched
+  if (!dataManager) {
+    return <div>Loading...</div>
   }
 
-  const combinedIngredients = [...data.baseIngredients, ...data.anniversaryIngredients];
+  const combinedIngredients = [...dataManager.baseIngredients, ...dataManager.anniversaryIngredients];
 
   return (
     <div>
       <h1 className="text-4xl font-bold">Effects</h1>
-      <EffectsBlock effects={data.effects} />
+      <EffectsBlock effects={dataManager.effects} />
       <h1 className="text-4xl font-bold">Ingredients</h1>
       <IngredientsBlock ingredients={combinedIngredients} />
-      </div>
+    </div>
   );
 }

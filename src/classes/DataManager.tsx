@@ -27,6 +27,7 @@ export class DataManager {
     effects: Effect[] = [];
     baseIngredients: Ingredient[] = [];
     anniversaryIngredients: Ingredient[] = [];
+    loaded: boolean = false;
 
     private async loadEffects(): Promise<void> {
         try {
@@ -82,6 +83,7 @@ export class DataManager {
         await this.loadEffects();
         await this.loadBaseIngredients();
         await this.loadAnniversaryIngredients();
+        this.loaded = true;
     }
 }
 
