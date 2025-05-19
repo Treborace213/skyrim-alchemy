@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import { DataManager, dataManager } from "./types/dataManager";
+import { DataManager, dataManager } from "../types/dataManager";
 import IngredientsBlock from "./components/IngredientsBlock";
 import EffectsBlock from "./components/EffectsBlock";
 

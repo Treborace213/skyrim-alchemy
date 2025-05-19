@@ -1,4 +1,4 @@
-import { Effect } from "../types/effect";
+import { Effect } from "../../types/effect";
 import EffectDisplay from "./EffectDisplay";
 
 interface EffectDisplayComponentProps {
