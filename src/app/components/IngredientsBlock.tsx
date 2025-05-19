@@ -1,4 +1,3 @@
-import React from "react";
 import { Ingredient } from "../types/ingredient";
 import IngredientBox from "./IngredientDisplay";
 
