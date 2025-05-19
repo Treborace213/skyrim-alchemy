@@ -1,5 +1,6 @@
 import { Effect } from "@/types/effect";
 import { Ingredient } from "@/types/ingredient";
+import { getBasePath } from "@/utils/basePath";
 
 interface JsonEffect {
     Effect: string;
@@ -31,7 +32,7 @@ export class DataManager {
 
     private async loadEffects(): Promise<void> {
         try {
-            const filePath = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/effects.json`;
+            const filePath = `${getBasePath()}/data/effects.json`;
             const response = await fetch(filePath);
             if (!response.ok) throw new Error(`Network response was not ok for path: ${filePath} (Status: ${response.status})`);
             const json = await response.json();
@@ -72,11 +73,11 @@ export class DataManager {
     }
 
     private async loadBaseIngredients() {
-        this.baseIngredients = await this.getIngredients(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/legendaryAndSpecialEdition.json`)
+        this.baseIngredients = await this.getIngredients(`${getBasePath()}/data/legendaryAndSpecialEdition.json`)
     }
 
     private async loadAnniversaryIngredients() {
-        this.anniversaryIngredients = await this.getIngredients(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/data/anniversaryEdition.json`);
+        this.anniversaryIngredients = await this.getIngredients(`${getBasePath()}/data/anniversaryEdition.json`);
     }
 
     async loadData() {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Navbar";
+import { getBasePath } from "@/utils/basePath";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   title: "Skyrim Alchemy",
   description: "A tool to help with Alchemy in Skyrim",
   icons: {
-    icon: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico`
+    icon: `${getBasePath()}/favicon.ico`
   }
 };
 
