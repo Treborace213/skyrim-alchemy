@@ -1,5 +1,5 @@
-import { Effect } from "../types/effect";
-import { Ingredient } from "../types/ingredient"
+import { Effect } from "@/types/effect";
+import { Ingredient } from "@/types/ingredient";
 
 interface JsonEffect {
     Effect: string;
