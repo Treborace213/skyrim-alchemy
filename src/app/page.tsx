@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { DataManager, dataManager } from "../classes/DataManager";
-import IngredientsBlock from "./components/IngredientsBlock";
-import EffectsBlock from "./components/EffectsBlock";
+import IngredientsBlock from "../components/IngredientsBlock";
+import EffectsBlock from "../components/EffectsBlock";
 
 export default function Home() {
   const [data, setData] = useState<DataManager | null>(null);
