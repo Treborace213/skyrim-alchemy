@@ -21,19 +21,26 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
 
     return (
         <div className="relative">
-            <input
-                className="border-2 rounded-md w-full"
-                placeholder="Filter Effects"
-                value={effectListFilter}
-                onChange={(e) => setEffectListFilter(e.target.value)}
-                onFocus={() => setSearchIsFocused(true)}
-                onBlur={() => setTimeout(() => setSearchIsFocused(false), 150)}
-            />
+            <div className="flex">
+                <input
+                    className="border-2 rounded-md flex-grow"
+                    placeholder="Filter Effects"
+                    value={effectListFilter}
+                    onChange={(e) => setEffectListFilter(e.target.value)}
+                    onFocus={() => setSearchIsFocused(true)}
+                    onBlur={() => setTimeout(() => setSearchIsFocused(false), 150)}
+                />
 
-            <button onClick={() => setSelectedEffects([])}>Clear selection</button>
+                <button
+                    onClick={() => setSelectedEffects([])}
+                >
+                    Clear selection
+                </button>
+            </div>
 
+            {/* Dropdown list of effects */}
             {searchIsFocused && (
-                <ul className="max-h-64 overflow-auto border border-gray-300 rounded-md z-10"
+                <ul className="max-h-64 overflow-auto border border-gray-300 rounded-md"
                     onMouseDown={(e) => e.preventDefault()}
                 >
                     {dataManager?.effects
@@ -49,14 +56,39 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
                                         : [...selectedEffects, effect])
                                 }
                                 className={`px-3 py-1 cursor-pointer ${selectedEffects.includes(effect)
-                                    ? "bg-cyan-900 text-white"
-                                    : "hover:bg-gray-100"
+                                    ? "bg-cyan-900 text-white hover:bg-cyan-700"
+                                    : "hover:bg-gray-600"
                                     }`}
                             >
                                 {effect.name}
                             </li>
-                        ))}
+                        ))
+                    }
                 </ul>
+            )}
+
+            {/* List of selected effects */}
+            {(selectedEffects.length == 0) ? (
+                <p> No effects being filtered </p>
+
+            ) : selectedEffects.map((effect, index) =>
+                <div
+                    key={effect.name}
+                    className={`justify-center border border-gray-300 rounded-3xl inline-flex p-2 m-1 ${effect.isPos ? "bg-pos" : "bg-neg"}`}
+                >
+                    {effect.name}
+                    <span
+                        onClick={() =>
+                            setSelectedEffects(
+                                selectedEffects.slice(0, index).concat(selectedEffects.slice(index + 1))
+                            )
+                        }
+                        className="w-6 h-6 flex justify-center rounded-full bg-cyan-900 text-white cursor-pointer hover:bg-cyan-700"
+                    >
+                        &times;
+                    </span>
+
+                </div>
             )}
         </div>
     );
