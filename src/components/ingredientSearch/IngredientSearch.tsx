@@ -12,16 +12,22 @@ interface IngredientSearchProps {
 
 const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) => {
     const [nameInput, setNameInput] = useState("");
-    const [selectedEffects, setSelectedEffects] = useState<Effect[]>([])
+    const [selectedEffects, setSelectedEffects] = useState<Effect[]>([]);
+    const [includeAnniversary, setIncludeAnniversary] = useState(true);
     const { dataManager } = useDataManager();
 
     useEffect(() => {
         updateResults()
-    }, [dataManager, nameInput, selectedEffects])
+    }, [dataManager, nameInput, selectedEffects, includeAnniversary])
 
     const updateResults = () => {
         if (dataManager) {
-            var results = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
+            var results = dataManager.baseIngredients
+
+            // Are AE ingredients to be included?
+            if (includeAnniversary) {
+                results = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
+            }
 
             // Filter by name
             results = results.filter((e) => e.name.toLowerCase().includes(nameInput.toLowerCase()));
@@ -38,8 +44,13 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             className="flex flex-col h-screen bg-menu w-200 sticky overflow-y-auto"
             style={{ top: `var(--navbar-height)` }}
         >
-            {/* Name Search */}
-            <input className="border-2 rounded-md" placeholder="Filter Name" value={nameInput} onChange={(e) => setNameInput(e.target.value)} />
+            <div className="flex">
+                {/* Name Search */}
+                <input className="border-2 rounded-md flex-grow" placeholder="Filter Name" value={nameInput} onChange={(e) => setNameInput(e.target.value)} />
+
+                {/* Include Anniversary Edition */}
+                <input type="checkbox" checked={includeAnniversary} onChange={(e) => setIncludeAnniversary(e.target.checked)} /><span>Anniversary Edition</span>
+            </div>
 
             {/* Effect Search */}
             <EffectFilter onSelectedChange={setSelectedEffects} />
