@@ -5,7 +5,7 @@ const NavBar: React.FC = () => {
   return (
     <nav
       /* Do not change the height with tailwind. Use --navbar-height. */
-      className="bg-gray-800 text-white px-6 flex justify-between items-center sticky top-0"
+      className="bg-gray-800 text-white px-6 flex justify-between items-center sticky top-0 z-100"
       style={{ height: 'var(--navbar-height' }}
     >
       <div className="text-xl font-bold">Skyrim Alchemy</div>
