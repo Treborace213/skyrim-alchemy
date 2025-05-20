@@ -41,8 +41,8 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
 
     return (
         <div
-            className="flex flex-col h-screen bg-menu w-200 sticky overflow-y-auto"
-            style={{ top: `var(--navbar-height)` }}
+            className="flex flex-col bg-menu w-200 sticky overflow-y-auto"
+            style={{ top: `var(--navbar-height)`, height: 'calc(100vh - var(--navbar-height))' }}
         >
             <div className="flex">
                 {/* Name Search */}
