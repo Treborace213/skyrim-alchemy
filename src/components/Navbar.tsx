@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
+    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center sticky top-0">
       <div className="text-xl font-bold">Skyrim Alchemy</div>
       <ul className="flex space-x-6">
         <li>
