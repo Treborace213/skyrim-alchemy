@@ -7,10 +7,12 @@ interface EffectDisplayComponentProps {
 
 const EffectsBlock: React.FC<EffectDisplayComponentProps> = ({ effects }) => {
   return (
-    <div className="grid gap-4">
-      {effects.map((effect, index) => (
-        <EffectDisplay key={index} effect={effect} />
-      ))}
+    <div className="w-full flex justify-center">
+      <div className="flex flex-col gap-4">
+        {effects.map((effect, index) => (
+          <EffectDisplay key={index} effect={effect} />
+        ))}
+      </div>
     </div>
   );
 };
