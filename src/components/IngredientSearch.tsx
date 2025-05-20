@@ -19,7 +19,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({onResultsChange}) =>
     const updateResults = () => {
         if (dataManager) {
             const ingredients = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
-            const results = ingredients.filter((e) => e.name.toLowerCase().startsWith(input.toLowerCase()));
+            const results = ingredients.filter((e) => e.name.toLowerCase().includes(input.toLowerCase()));
             onResultsChange(results);
         }
     }
