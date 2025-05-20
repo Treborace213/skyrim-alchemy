@@ -2,7 +2,7 @@
 
 import useDataManager from "@/hooks/useDataManager";
 import IngredientsBlock from "@/components/IngredientsBlock";
-import IngredientSearch from "@/components/IngredientSearch";
+import IngredientSearch from "@/components/IngredientSearch/IngredientSearch";
 import { useState } from "react";
 import { Ingredient } from "@/types/ingredient";
 
