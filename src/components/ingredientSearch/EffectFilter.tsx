@@ -11,6 +11,8 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
     const { dataManager } = useDataManager();
     const [inputValue, setInputValue] = useState("");
 
+    const allItems: Effect[] = dataManager?.effects ?? [];
+
     // Sync onChange with exact effect match from input (if any found, else null).
     useEffect(() => {
         const effect = allItems.find(
@@ -19,8 +21,6 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
 
         onChange(effect);
     }, [inputValue])
-
-    const allItems: Effect[] = dataManager?.effects ?? [];
 
     const filteredItems = useMemo(() => {
         return allItems.filter((effect) =>
