@@ -34,12 +34,15 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
     }
 
     return (
-        <div className="flex flex-col h-screen bg-gray-800 w-200">
+        <div
+            className="flex flex-col h-screen bg-gray-800 w-200 sticky overflow-y-auto"
+            style={{ top: `var(--navbar-height)` }}
+        >
             {/* Name Search */}
             <input className="border-2 rounded-md" placeholder="Filter Name" value={nameInput} onChange={(e) => setNameInput(e.target.value)} />
 
             {/* Effect Search */}
-            <EffectFilter onSelectedChange={setSelectedEffects}/>
+            <EffectFilter onSelectedChange={setSelectedEffects} />
         </div>
     );
 }

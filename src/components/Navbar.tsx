@@ -1,8 +1,13 @@
 import Link from 'next/link';
+import "@/globals.css";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center sticky top-0">
+    <nav
+      /* Do not change the height with tailwind. Use --navbar-height. */
+      className="bg-gray-800 text-white px-6 flex justify-between items-center sticky top-0"
+      style={{ height: 'var(--navbar-height' }}
+    >
       <div className="text-xl font-bold">Skyrim Alchemy</div>
       <ul className="flex space-x-6">
         <li>
