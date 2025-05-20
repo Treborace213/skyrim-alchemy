@@ -27,7 +27,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
 
                                 {/* Magnitude Multiplier */}
                                 {effect.magnitudeMult !== 1 && (
-                                    <span className="inline space-x-2">
+                                    <span className="space-x-2">
                                         <img src={magnitudeIconPath} alt="Magnitude Icon" className="w-6 h-6 inline" />
                                         <span className="text-white inline">x{effect.magnitudeMult}</span>
                                     </span>
@@ -35,7 +35,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
 
                                 {/* Duration Multiplier */}
                                 {effect.durationMult !== 1 && (
-                                    <span className="inline space-x-2">
+                                    <span className="space-x-2">
                                         <img src={durationIconPath} alt="Duration Icon" className="w-6 h-6 inline" />
                                         <span className="text-white inline">x{effect.durationMult}</span>
                                     </span>
@@ -43,7 +43,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
 
                                 {/* Value Multiplier */}
                                 {effect.valueMult !== 1 && (
-                                    <span className="inline space-x-2">
+                                    <span className="space-x-2">
                                         <img src={valueIconPath} alt="Value Icon" className="w-6 h-6 inline" />
                                         <span className="text-white inline">x{effect.valueMult}</span>
                                     </span>
