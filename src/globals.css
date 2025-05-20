@@ -1,9 +1,27 @@
 @import "tailwindcss";
 
 :root {
+  --navbar-height: 64px;
+
   --background: #ffffff;
   --foreground: #171717;
-  --navbar-height: 64px;
+  --menu-color: oklch(87.2% 0.01 258.338);
+  --tint-fg: oklch(44.6% 0.03 256.802);
+  --tint-bg: oklch(70.7% 0.022 261.325);
+  --highlight: oklch(86.5% 0.127 207.078);
+  --highlight-tint: oklch(95.6% 0.045 203.388);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --menu-color: oklch(27.8% 0.033 256.848);
+    --tint-fg: oklch(70.7% 0.022 261.325);
+    --tint-bg: oklch(44.6% 0.03 256.802);
+    --highlight: oklch(39.1% 0.09 240.876);
+    --highlight-tint: oklch(52% 0.105 223.128);
+  }
 }
 
 @theme {
@@ -12,17 +30,16 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-menu: var(--menu-color);
+  --color-tint-fg: var(--tint-fg);
+  --color-tint-bg: var(--tint-bg);
+  --color-hlt: var(--highlight);
+  --color-hlt-tint: var(--highlight-tint);
 }
 
 body {

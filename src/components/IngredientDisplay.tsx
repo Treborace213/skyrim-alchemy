@@ -31,7 +31,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                     <TooltipWrapper text="Magnitude multiplier">
                                         <span className="space-x-2">
                                             <img src={magnitudeIconPath} alt="Magnitude Icon" className="w-6 h-6 inline" />
-                                            <span className="text-white inline">x{effect.magnitudeMult}</span>
+                                            <span className="inline">x{effect.magnitudeMult}</span>
                                         </span>
                                     </TooltipWrapper>
                                 )}
@@ -41,7 +41,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                     <TooltipWrapper text="Duration multiplier">
                                     <span className="space-x-2">
                                         <img src={durationIconPath} alt="Duration Icon" className="w-6 h-6 inline" />
-                                        <span className="text-white inline">x{effect.durationMult}</span>
+                                        <span className="inline">x{effect.durationMult}</span>
                                     </span>
                                     </TooltipWrapper>
                                 )}
@@ -51,7 +51,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                     <TooltipWrapper text="Value multiplier">
                                     <span className="space-x-2">
                                         <img src={valueIconPath} alt="Value Icon" className="w-6 h-6 inline" />
-                                        <span className="text-white inline">x{effect.valueMult}</span>
+                                        <span className="inline">x{effect.valueMult}</span>
                                     </span>
                                     </TooltipWrapper>
                                 )}

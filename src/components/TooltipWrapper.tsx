@@ -8,7 +8,7 @@ const TooltipWrapper: React.FC<TooltipWrapperProps> = ({ children, text }) => {
     <div className="relative group inline-block">
       {children}
 
-      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block bg-gray-800 text-white text-sm py-1 px-2 rounded">
+      <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block bg-menu text-sm py-1 px-2 rounded">
         {text}
       </div>
 

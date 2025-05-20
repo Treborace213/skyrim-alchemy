@@ -40,7 +40,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
 
             {/* Dropdown list of effects */}
             {searchIsFocused && (
-                <ul className="max-h-64 overflow-auto border border-gray-300 rounded-md"
+                <ul className="max-h-64 overflow-auto border rounded-md"
                     onMouseDown={(e) => e.preventDefault()}
                 >
                     {dataManager?.effects
@@ -56,8 +56,8 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
                                         : [...selectedEffects, effect])
                                 }
                                 className={`px-3 py-1 cursor-pointer ${selectedEffects.includes(effect)
-                                    ? "bg-cyan-900 text-white hover:bg-cyan-700"
-                                    : "hover:bg-gray-600"
+                                    ? "bg-hlt hover:bg-hlt-tint"
+                                    : "hover:bg-tint-bg"
                                     }`}
                             >
                                 {effect.name}
@@ -74,7 +74,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
             ) : selectedEffects.map((effect, index) =>
                 <div
                     key={effect.name}
-                    className={`justify-center border border-gray-300 rounded-3xl inline-flex p-2 m-1 ${effect.isPos ? "bg-pos" : "bg-neg"}`}
+                    className={`justify-center border rounded-3xl inline-flex p-2 m-1 ${effect.isPos ? "bg-pos" : "bg-neg"}`}
                 >
                     {effect.name}
                     <span
@@ -83,7 +83,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
                                 selectedEffects.slice(0, index).concat(selectedEffects.slice(index + 1))
                             )
                         }
-                        className="w-6 h-6 flex justify-center rounded-full bg-cyan-900 text-white cursor-pointer hover:bg-cyan-700"
+                        className="w-6 h-6 flex justify-center rounded-full bg-hlt cursor-pointer hover:bg-hlt-tint"
                     >
                         &times;
                     </span>

@@ -22,7 +22,7 @@ const EffectDisplay: React.FC<EffectViewerProps> = ({ effect }) => {
         <div className={`p-4 rounded-lg ${effect.isPos ? "bg-pos" : "bg-neg"}`}>
             <h3 className="text-xl font-semibold">{effect.name}</h3>
 
-            <p className="text-white mt-2">{effect.description}</p>
+            <p className="mt-2">{effect.description}</p>
             <hr className="m-2" />
             <div className="grid grid-cols-2 gap-2 p-2">
                 <PropertyDisplay descriptionText="Base Cost:" valueText={effect.baseCost} />
