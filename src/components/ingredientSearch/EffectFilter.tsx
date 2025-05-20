@@ -74,7 +74,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
             ) : selectedEffects.map((effect, index) =>
                 <div
                     key={effect.name}
-                    className={`justify-center border rounded-3xl inline-flex p-2 m-1 ${effect.isPos ? "bg-pos" : "bg-neg"}`}
+                    className={`justify-center border rounded-3xl inline-flex p-2 m-1 ${effect.isPos ? "pos" : "neg"}`}
                 >
                     {effect.name}
                     <span
@@ -83,11 +83,11 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
                                 selectedEffects.slice(0, index).concat(selectedEffects.slice(index + 1))
                             )
                         }
-                        className="w-6 h-6 flex justify-center rounded-full bg-hlt cursor-pointer hover:bg-hlt-tint"
+                        className={`ml-2 w-6 h-6 flex justify-center rounded-full cursor-pointer
+                            ${effect.isPos ? "bg-pos-tint hover:bg-pos-hlt" : "bg-neg-tint hover:bg-neg-hlt"}`}
                     >
                         &times;
                     </span>
-
                 </div>
             )}
         </div>
