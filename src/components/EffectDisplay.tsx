@@ -19,7 +19,7 @@ const PropertyDisplay: React.FC<PropertyDisplayProps> = ({ descriptionText, valu
 
 const EffectDisplay: React.FC<EffectViewerProps> = ({ effect }) => {
     return (
-        <div className={`p-4 rounded-lg ${effect.isPos ? 'bg-green-700' : 'bg-red-700'}`}>
+        <div className={`p-4 rounded-lg ${effect.isPos ? "bg-pos" : "bg-neg"}`}>
             <h3 className="text-xl font-semibold">{effect.name}</h3>
 
             <p className="text-white mt-2">{effect.description}</p>

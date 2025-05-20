@@ -3,9 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --positive-effect-col: #047857;
-  --negative-effect-col: #9b1d20;
   --navbar-height: 64px;
+}
+
+@theme {
+  --color-pos: rgb(0, 112, 0);
+  --color-neg: rgb(224, 0, 0);
 }
 
 @theme inline {
@@ -26,12 +29,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.bg-pos {
-  background: var(--positive-effect-col);
-}
-
-.bg-neg {
-  background: var(--negative-effect-col);
 }

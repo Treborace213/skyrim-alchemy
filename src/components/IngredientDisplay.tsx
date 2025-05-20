@@ -20,7 +20,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                     return (
                         <div
                             key={index}
-                            className={`p-4 rounded-lg ${effect.effect.isPos ? 'bg-green-700' : 'bg-red-700'}`}
+                            className={`p-4 rounded-lg ${effect.effect.isPos ? 'bg-pos' : 'bg-neg'}`}
                         >
                             <div className="space-x-4">
                                 {/* Effect Name */}
