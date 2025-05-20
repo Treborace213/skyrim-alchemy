@@ -33,7 +33,6 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
         getMenuProps,
         getInputProps,
         getItemProps,
-        highlightedIndex,
     } = useCombobox<Effect>({
         items: filteredItems,
         inputValue,
