@@ -12,7 +12,7 @@ interface IngredientSearchProps {
 
 const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) => {
     const [nameInput, setNameInput] = useState("");
-    const [selectedEffects, setSelectedEffects] = useState<Effect[]>([]);
+    const [selectedEffects, setSelectedEffects] = useState<(Effect | null)[]>([null, null, null, null]);
     const [includeAnniversary, setIncludeAnniversary] = useState(true);
     const { dataManager } = useDataManager();
 
@@ -33,10 +33,22 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             results = results.filter((e) => e.name.toLowerCase().includes(nameInput.toLowerCase()));
 
             // Filter by selected effects
-            results = results.filter((ingredient) => selectedEffects.every((selectedEffect) => ingredient.effects.some((effect) => effect.effect === selectedEffect)))
+            results = results.filter((ingredient) =>
+                selectedEffects
+                    .filter((selectedEffect) => selectedEffect != null)
+                    .every((selectedEffect) =>
+                        ingredient.effects.some((effect) => effect.effect === selectedEffect)
+                    )
+            );
 
             onResultsChange(results);
         }
+    }
+
+    const updateSelectedEffects = (effectIndex: number, newEffect: Effect | null) => {
+        var effectList = [...selectedEffects];
+        effectList[effectIndex] = newEffect;
+        setSelectedEffects(effectList);
     }
 
     return (
@@ -53,7 +65,9 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             </div>
 
             {/* Effect Search */}
-            <EffectFilter onSelectedChange={setSelectedEffects} />
+            {selectedEffects.map((item, index) => (
+                <EffectFilter key={index} onChange={(newEffect) => updateSelectedEffects(index, newEffect)} />
+            ))}
         </div>
     );
 }
