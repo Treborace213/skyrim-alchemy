@@ -1,5 +1,6 @@
 import { Ingredient } from "@/types/ingredient";
 import { getBasePath } from "@/utils/basePath";
+import TooltipWrapper from "./TooltipWrapper";
 
 interface IngredientViewerProps {
     ingredient: Ingredient;
@@ -27,26 +28,32 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
 
                                 {/* Magnitude Multiplier */}
                                 {effect.magnitudeMult !== 1 && (
-                                    <span className="space-x-2">
-                                        <img src={magnitudeIconPath} alt="Magnitude Icon" className="w-6 h-6 inline" />
-                                        <span className="text-white inline">x{effect.magnitudeMult}</span>
-                                    </span>
+                                    <TooltipWrapper text="Magnitude multiplier">
+                                        <span className="space-x-2">
+                                            <img src={magnitudeIconPath} alt="Magnitude Icon" className="w-6 h-6 inline" />
+                                            <span className="text-white inline">x{effect.magnitudeMult}</span>
+                                        </span>
+                                    </TooltipWrapper>
                                 )}
 
                                 {/* Duration Multiplier */}
                                 {effect.durationMult !== 1 && (
+                                    <TooltipWrapper text="Duration multiplier">
                                     <span className="space-x-2">
                                         <img src={durationIconPath} alt="Duration Icon" className="w-6 h-6 inline" />
                                         <span className="text-white inline">x{effect.durationMult}</span>
                                     </span>
+                                    </TooltipWrapper>
                                 )}
 
                                 {/* Value Multiplier */}
                                 {effect.valueMult !== 1 && (
+                                    <TooltipWrapper text="Value multiplier">
                                     <span className="space-x-2">
                                         <img src={valueIconPath} alt="Value Icon" className="w-6 h-6 inline" />
                                         <span className="text-white inline">x{effect.valueMult}</span>
                                     </span>
+                                    </TooltipWrapper>
                                 )}
                             </div>
                         </div>
