@@ -19,7 +19,8 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSelectedChange }) => {
 
     return (
         <div>
-            < input className="border-2 rounded-md" placeholder="Filter Effects" value={effectListFilter} onChange={(e) => setEffectListFilter(e.target.value)} />
+            <input className="border-2 rounded-md" placeholder="Filter Effects" value={effectListFilter} onChange={(e) => setEffectListFilter(e.target.value)} />
+            <button onClick={() => setSelectedEffects([])}>Clear selection</button>
             <ul>
                 {dataManager?.effects
                     .filter((effect) => effect.name.toLowerCase().includes(effectListFilter.toLowerCase()))
