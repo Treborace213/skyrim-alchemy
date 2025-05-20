@@ -7,10 +7,12 @@ interface IngredientDisplayComponentProps {
 
 const IngredientsBlock: React.FC<IngredientDisplayComponentProps> = ({ ingredients }) => {
   return (
-    <div className="grid gap-4">
-      {ingredients.map((ingredient, index) => (
-        <IngredientBox key={index} ingredient={ingredient} />
-      ))}
+    <div className="w-full flex justify-center">
+      <div className="flex flex-col gap-4">
+        {ingredients.map((ingredient, index) => (
+          <IngredientBox key={index} ingredient={ingredient} />
+        ))}
+      </div>
     </div>
   );
 };
