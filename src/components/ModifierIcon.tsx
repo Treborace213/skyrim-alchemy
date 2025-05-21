@@ -1,6 +1,6 @@
 import { getBasePath } from "@/utils/basePath";
 import TooltipWrapper from "./TooltipWrapper";
-import EffectProperty from "@/Enums/EffectProperty"
+import EffectProperty from "@/enums-temp/EffectProperty"
 
 const magnitudeIconPath = `${getBasePath()}/images/magnitudeIcon.png`;
 const durationIconPath = `${getBasePath()}/images/durationIcon.png`;
