@@ -33,6 +33,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
         getMenuProps,
         getInputProps,
         getItemProps,
+        highlightedIndex,
     } = useCombobox<Effect>({
         items: filteredItems,
         inputValue,
@@ -44,21 +45,29 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
     });
 
     return (
-        <div>
-            <input {...getInputProps()} placeholder="Filter for effect..." />
-            <ul {...getMenuProps()} >
-                {isOpen &&
-                    filteredItems.map((item, index) => (
-                        <li
-                            key={item.name}
-                            {...getItemProps({ item, index })}
-                            className={`hover:bg-hlt`}
-                        >
-                            {item.name}
-                        </li>
-                    ))}
+        <div className="m-1 w-8/10">
+            <input
+                {...getInputProps()}
+                placeholder="Filter effect"
+                className="border-b-1 w-full"
+            />
+            <ul
+                {...getMenuProps()}
+                className="overflow-y-auto max-h-60 absolute bg-menu rounded-md border-2 w-58 px-2 py-1 -translate-x-0.5 z-10"
+                style={{ display: isOpen ? "block" : "none" }} // Hide the <ul> if the list is not open.
+            >
+                {isOpen && filteredItems.map((item, index) => (
+                    <li
+                        key={item.name}
+                        {...getItemProps({ item, index })}
+                        className={`${highlightedIndex === index ? "bg-hlt" : ""}`}
+                    >
+                        {item.name}
+                    </li>
+                ))}
             </ul>
         </div>
+
     );
 };
 

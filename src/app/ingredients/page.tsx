@@ -13,8 +13,9 @@ export default function IngredientsPage() {
     if (!dataManager) return <div>Loading...</div>
 
     return (
-        <div className="flex">
+        <div>
             <IngredientSearch onResultsChange={setIngredients}/>
+            <div className="my-2"></div>
             <IngredientsBlock ingredients={ingredients} />
         </div>
     );

@@ -1,6 +1,7 @@
 import { Ingredient } from "@/types/ingredient";
 import { getBasePath } from "@/utils/basePath";
 import TooltipWrapper from "./TooltipWrapper";
+import ModifierIcon from "./ModifierIcon";
 
 interface IngredientViewerProps {
     ingredient: Ingredient;
@@ -12,49 +13,29 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
     const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
 
     return (
-        <div className="p-4 border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">{ingredient.name}</h2>
+        <div className="p-1 w-90">
+            <h2 className="font-bold mb-2">{ingredient.name}</h2>
 
-            <div className="space-y-4">
+            <div className="grid gap-1">
                 {ingredient.effects.map((effect, index) => {
                     return (
                         <div
                             key={index}
-                            className={`p-4 rounded-lg ${effect.effect.isPos ? 'pos' : 'neg'}`}
+                            className={`px-2 py-1 rounded-lg ${effect.effect.isPos ? 'pos' : 'neg'}`}
                         >
-                            <div className="space-x-4">
-                                {/* Effect Name */}
-                                <h3 className="text-lg font-semibold inline">{effect.effect.name}</h3>
-
-                                {/* Magnitude Multiplier */}
-                                {effect.magnitudeMult !== 1 && (
-                                    <TooltipWrapper text="Magnitude multiplier">
-                                        <span className="space-x-2">
-                                            <img src={magnitudeIconPath} alt="Magnitude Icon" className="w-6 h-6 inline" />
-                                            <span className="inline">x{effect.magnitudeMult}</span>
-                                        </span>
-                                    </TooltipWrapper>
-                                )}
-
-                                {/* Duration Multiplier */}
-                                {effect.durationMult !== 1 && (
-                                    <TooltipWrapper text="Duration multiplier">
-                                    <span className="space-x-2">
-                                        <img src={durationIconPath} alt="Duration Icon" className="w-6 h-6 inline" />
-                                        <span className="inline">x{effect.durationMult}</span>
-                                    </span>
-                                    </TooltipWrapper>
-                                )}
-
-                                {/* Value Multiplier */}
-                                {effect.valueMult !== 1 && (
-                                    <TooltipWrapper text="Value multiplier">
-                                    <span className="space-x-2">
-                                        <img src={valueIconPath} alt="Value Icon" className="w-6 h-6 inline" />
-                                        <span className="inline">x{effect.valueMult}</span>
-                                    </span>
-                                    </TooltipWrapper>
-                                )}
+                            <div className="flex justify-between">
+                                <h3>{effect.effect.name}</h3>
+                                <div className="space-x-1">
+                                    {effect.magnitudeMult !== 1 && (
+                                        <ModifierIcon iconPath={magnitudeIconPath} label="Magnitude" multiplier={effect.magnitudeMult} />
+                                    )}
+                                    {effect.durationMult !== 1 && (
+                                        <ModifierIcon iconPath={durationIconPath} label="Duration" multiplier={effect.durationMult} />
+                                    )}
+                                    {effect.valueMult !== 1 && (
+                                        <ModifierIcon iconPath={valueIconPath} label="Value" multiplier={effect.valueMult} />
+                                    )}
+                                </div>
                             </div>
                         </div>
                     );
