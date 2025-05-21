@@ -26,19 +26,22 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                 <h3>{effect.effect.name}</h3>
                                 <div className="space-x-1">
                                     {effect.magnitudeMult !== 1 && (
-                                        <PropertyIcon effectProperty={EffectProperty.Magnitude}
-                                            separatorText="x" magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier"
-                                        />
+                                        <span className="mr-1.5">
+                                            <PropertyIcon effectProperty={EffectProperty.Magnitude} tooltipText="Magnitude Multiplier" className="mr-0.5"/>
+                                            x{effect.magnitudeMult}
+                                        </span>
                                     )}
                                     {effect.durationMult !== 1 && (
-                                        <PropertyIcon effectProperty={EffectProperty.Duration}
-                                            separatorText="x" magnitude={effect.durationMult} tooltipText="Duration Multiplier"
-                                        />
+                                        <span className="mr-1.5">
+                                            <PropertyIcon effectProperty={EffectProperty.Duration} tooltipText="Duration Multiplier" className="mr-0.5" />
+                                            x{effect.durationMult}
+                                        </span>
                                     )}
                                     {effect.valueMult !== 1 && (
-                                        <PropertyIcon effectProperty={EffectProperty.Value}
-                                            separatorText="x" magnitude={effect.valueMult} tooltipText="Value Multiplier"
-                                        />
+                                        <span className="ml-0.5">
+                                            <PropertyIcon effectProperty={EffectProperty.Value} tooltipText="Value Multiplier" className="mr-0.5" />
+                                            x{effect.valueMult}
+                                        </span>
                                     )}
                                 </div>
                             </div>

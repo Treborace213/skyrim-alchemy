@@ -35,9 +35,9 @@ const EffectDisplay: React.FC<EffectViewerProps> = ({ effect }) => {
             <div className={`flex justify-evenly rounded-lg py-0.5
                 ${effect.isPos ? "bg-pos-tint" : "bg-neg-tint"}`}
             >
-                <PropertyIcon effectProperty={EffectProperty.Value} separatorText="= " magnitude={effect.baseCost} tooltipText="Base Cost" />
-                <PropertyIcon effectProperty={EffectProperty.Magnitude} separatorText="= " magnitude={effect.baseMag} tooltipText="Base Magnitude" />
-                <PropertyIcon effectProperty={EffectProperty.Duration} separatorText="= " magnitude={effect.baseDur} tooltipText="Base Duration" />
+                <div><PropertyIcon effectProperty={EffectProperty.Value} tooltipText="Base Cost" /> = {effect.baseCost}</div>
+                <div><PropertyIcon effectProperty={EffectProperty.Magnitude} tooltipText="Base Magnitude" /> = {effect.baseMag}</div>
+                <div><PropertyIcon effectProperty={EffectProperty.Duration} tooltipText="Base Duration" /> = {effect.baseDur}</div>
             </div>
         </div>
     );
