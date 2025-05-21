@@ -13,6 +13,10 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
     const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
 
     return (
+        /*
+        When changing the width styles, check the ingredient 'Thorn Hook' 
+        as that has the longest effect name + modifiers
+        */
         <div className="p-1 w-90">
             <h2 className="font-bold mb-2">{ingredient.name}</h2>
 
