@@ -74,7 +74,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
                 />
 
                 {/* Effect Search */}
-                <div className="bg-menu p-2 pb-3.5 m-1 border border-bg-tint rounded-lg min-w-75 w-1/3 flex flex-col items-center">
+                <div className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center">
                     {selectedEffects.map((item, index) => (
                         <EffectFilter key={index} onChange={(newEffect) => updateSelectedEffects(index, newEffect)} />
                     ))}
