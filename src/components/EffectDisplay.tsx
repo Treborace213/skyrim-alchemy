@@ -16,9 +16,9 @@ const prettyDescription = (description: string): React.ReactNode => {
             {parts.map((part, index) => {
                 switch (part) {
                     case "<dur>":
-                        return <PropertyIcon effectProperty={EffectProperty.Duration} />;
+                        return <PropertyIcon key={index} effectProperty={EffectProperty.Duration} />;
                     case "<mag>":
-                        return <PropertyIcon effectProperty={EffectProperty.Magnitude} />;
+                        return <PropertyIcon key={index} effectProperty={EffectProperty.Magnitude} />;
                     default:
                         return <React.Fragment key={index}>{part}</React.Fragment>
                 }
