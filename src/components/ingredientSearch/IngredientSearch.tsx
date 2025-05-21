@@ -28,6 +28,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             // Are AE ingredients to be included?
             if (includeAnniversary) {
                 results = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
+                results.sort((a, b) => a.name.localeCompare(b.name));
             }
 
             // Filter by name
