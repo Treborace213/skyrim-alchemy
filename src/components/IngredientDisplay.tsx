@@ -16,7 +16,7 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
         When changing the width styles, check the ingredient 'Thorn Hook' 
         as that has the longest effect name + modifiers
         */
-        <div className="p-1 w-90">
+        <div className="p-1 w-page-min">
             <h2 className="font-bold mb-2">{ingredient.name}</h2>
 
             <div className="grid gap-1">
