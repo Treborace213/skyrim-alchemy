@@ -1,6 +1,6 @@
 import { Ingredient } from "@/types/Engredient";
 import ModifierIcon from "./ModifierIcon";
-import EffectProperty from "@/enums-temp/EffectProperty";
+import EffectProperty from "@/enums/EffectProperty";
 
 interface IngredientViewerProps {
     ingredient: Ingredient;
