@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
 import { Effect } from "@/types/effect";
 import Checkbox from "../Checkbox";
+import BackToTopButton from "../BackToTopButton";
 
 interface IngredientSearchProps {
     onResultsChange: (results: Ingredient[]) => void;
@@ -55,30 +56,31 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
 
     return (
         <div className="flex flex-col items-center">
-                <div className="flex justify-between w-9/10 mx-1 mb-1">
-                    <h1 className="text-2xl">Search</h1>
-                    {/* Include Anniversary Edition */}
-                    <Checkbox
-                        label="Anniversary Edition"
-                        checked={includeAnniversary}
-                        onChange={setIncludeAnniversary}
-                    />
-                </div>
-
-                {/* Name Search */}
-                <input
-                    placeholder="Filter Name"
-                    value={nameInput}
-                    onChange={(e) => setNameInput(e.target.value)}
-                    className="rounded-md border px-2 py-0.5 bg-menu w-80 m-1"
+            <BackToTopButton />
+            <div className="flex justify-between w-9/10 mx-1 mb-1">
+                <h1 className="text-2xl">Search</h1>
+                {/* Include Anniversary Edition */}
+                <Checkbox
+                    label="Anniversary Edition"
+                    checked={includeAnniversary}
+                    onChange={setIncludeAnniversary}
                 />
+            </div>
 
-                {/* Effect Search */}
-                <div className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center">
-                    {selectedEffects.map((item, index) => (
-                        <EffectFilter key={index} onChange={(newEffect) => updateSelectedEffects(index, newEffect)} />
-                    ))}
-                </div>
+            {/* Name Search */}
+            <input
+                placeholder="Filter Name"
+                value={nameInput}
+                onChange={(e) => setNameInput(e.target.value)}
+                className="rounded-md border px-2 py-0.5 bg-menu w-80 m-1"
+            />
+
+            {/* Effect Search */}
+            <div className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center">
+                {selectedEffects.map((item, index) => (
+                    <EffectFilter key={index} onChange={(newEffect) => updateSelectedEffects(index, newEffect)} />
+                ))}
+            </div>
         </div>
     );
 }
