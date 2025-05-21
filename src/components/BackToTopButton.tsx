@@ -1,4 +1,4 @@
-import ArrowUpIcon from "@heroicons/react/24/solid/ArrowUpIcon";
+import ArrowUpIcon from "@heroicons/react/16/solid/ArrowUpIcon";
 import { useState, useEffect } from "react";
 
 const BackToTopButton = () => {
@@ -23,7 +23,7 @@ const BackToTopButton = () => {
             className={`fixed bottom-6 right-6 z-100
                 px-3 py-2 bg-menu rounded transition-opacity duration-300
                 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"}
-                flex items-center gap-0.5`}
+                flex items-center gap-1.5`}
         >
             <ArrowUpIcon className="w-4 h-4" /> Top
         </button>
