@@ -1,4 +1,4 @@
-import { Effect } from "./effect";
+import { Effect } from "./Effect";
 
 export type IngredientEffect = {
     effect: Effect,

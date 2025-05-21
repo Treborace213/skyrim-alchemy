@@ -1,10 +1,10 @@
 'use client'
 
 import useDataManager from "@/hooks/useDataManager";
-import { Ingredient } from "@/types/ingredient";
+import { Ingredient } from "@/types/Engredient";
 import { useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
-import { Effect } from "@/types/effect";
+import { Effect } from "@/types/Effect";
 import Checkbox from "../Checkbox";
 import BackToTopButton from "../BackToTopButton";
 

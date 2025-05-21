@@ -1,4 +1,4 @@
-import { Ingredient } from "@/types/ingredient";
+import { Ingredient } from "@/types/Engredient";
 import ModifierIcon from "./ModifierIcon";
 import EffectProperty from "@/Enums/EffectProperty";
 

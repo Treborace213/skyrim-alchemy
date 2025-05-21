@@ -1,7 +1,7 @@
 import { useCombobox } from "downshift";
 import { useEffect, useMemo, useState } from "react";
 import useDataManager from "@/hooks/useDataManager";
-import { Effect } from "@/types/effect";
+import { Effect } from "@/types/Effect";
 
 interface EffectFilterProps {
     onChange: (results: Effect | null) => void;

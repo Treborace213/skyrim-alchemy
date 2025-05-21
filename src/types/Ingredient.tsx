@@ -1,4 +1,4 @@
-import { IngredientEffect } from "./ingredientEffect";
+import { IngredientEffect } from "./IngredientEffect";
 
 export type Ingredient = {
     name: string;

@@ -1,6 +1,6 @@
-import { Effect } from "@/types/effect";
-import { Ingredient } from "@/types/ingredient";
-import { IngredientEffect } from "@/types/ingredientEffect";
+import { Effect } from "@/types/Effect";
+import { Ingredient } from "@/types/Engredient";
+import { IngredientEffect } from "@/types/IngredientEffect";
 import { getBasePath } from "@/utils/basePath";
 
 // Paths to the Json Files

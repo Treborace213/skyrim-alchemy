@@ -4,7 +4,7 @@ import useDataManager from "@/hooks/useDataManager";
 import IngredientsBlock from "@/components/IngredientsBlock";
 import IngredientSearch from "@/components/ingredientSearch/IngredientSearch";
 import { useState } from "react";
-import { Ingredient } from "@/types/ingredient";
+import { Ingredient } from "@/types/Engredient";
 
 export default function IngredientsPage() {
     const [ingredients, setIngredients] = useState<Ingredient[]>([])

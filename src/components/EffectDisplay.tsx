@@ -1,4 +1,4 @@
-import { Effect } from "@/types/effect";
+import { Effect } from "@/types/Effect";
 
 interface EffectViewerProps {
     effect: Effect;
