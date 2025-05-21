@@ -27,17 +27,17 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                 <div className="space-x-1">
                                     {effect.magnitudeMult !== 1 && (
                                         <PropertyIcon effectProperty={EffectProperty.Magnitude}
-                                            seperatorText="x" magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier"
+                                            separatorText="x" magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier"
                                         />
                                     )}
                                     {effect.durationMult !== 1 && (
                                         <PropertyIcon effectProperty={EffectProperty.Duration}
-                                            seperatorText="x" magnitude={effect.durationMult} tooltipText="Duration Multiplier"
+                                            separatorText="x" magnitude={effect.durationMult} tooltipText="Duration Multiplier"
                                         />
                                     )}
                                     {effect.valueMult !== 1 && (
                                         <PropertyIcon effectProperty={EffectProperty.Value}
-                                            seperatorText="x" magnitude={effect.valueMult} tooltipText="Value Multiplier"
+                                            separatorText="x" magnitude={effect.valueMult} tooltipText="Value Multiplier"
                                         />
                                     )}
                                 </div>

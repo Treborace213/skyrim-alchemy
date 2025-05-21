@@ -8,9 +8,9 @@ const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
 
 interface PropertyIconProps {
   effectProperty: EffectProperty;
-  seperatorText?: string;
-  magnitude: number;
-  tooltipText: string;
+  separatorText?: string;
+  magnitude?: number;
+  tooltipText?: string;
 }
 
 const getPath = (property: EffectProperty) => {
@@ -24,11 +24,11 @@ const getPath = (property: EffectProperty) => {
   }
 }
 
-const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, magnitude, seperatorText, tooltipText }) => (
-  <TooltipWrapper text={tooltipText}>
-    <span className="space-x-1.25">
+const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, magnitude, separatorText, tooltipText }) => (
+  <TooltipWrapper text={tooltipText ?? effectProperty}>
+    <span className={separatorText && "space-x-1.25"}>
       <img src={getPath(effectProperty)} alt={`${EffectProperty} Icon`} className="w-5 h-5 inline" />
-      <span className="inline">{seperatorText}{magnitude}</span>
+      <span className="inline">{separatorText}{magnitude}</span>
     </span>
   </TooltipWrapper>
 );
