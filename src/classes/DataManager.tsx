@@ -35,10 +35,26 @@ interface JsonIngredient {
 
 // Main Class
 export class DataManager {
-    effects: Effect[] = [];
-    baseIngredients: Ingredient[] = [];
-    anniversaryIngredients: Ingredient[] = [];
-    loaded: boolean = false;
+    private _effects: Effect[] = [];
+    private _baseIngredients: Ingredient[] = [];
+    private _anniversaryIngredients: Ingredient[] = [];
+    private _loaded: boolean = false;
+
+    get effects() {
+        return this._effects;
+    }
+
+    get baseIngredients() {
+        return this._baseIngredients;
+    }
+
+    get anniversaryIngredients() {
+        return this._anniversaryIngredients;
+    }
+
+    get loaded() {
+        return this._loaded;
+    }
 
     private async fetchAndMapData<T>(filePath: string, mapFn: (item: any) => T): Promise<T[]> {
         try {
@@ -72,7 +88,7 @@ export class DataManager {
         const ingredients = await this.fetchAndMapData(filePath, (item: JsonIngredient) => ({
             name: item.name,
             effects: item.effects.map((effect: JsonIngredientEffect) => ({
-                effect: this.effects.find((e: Effect) => e.name === effect.name),
+                effect: this._effects.find((e: Effect) => e.name === effect.name),
                 magnitudeMult: effect.magnitude,
                 durationMult: effect.duration,
                 valueMult: effect.value
@@ -83,11 +99,12 @@ export class DataManager {
     }
 
     async loadData() {
-        this.effects = await this.getEffects(effectJsonPath);
-        this.baseIngredients = await this.getIngredients(baseIngredientsPath);
-        this.anniversaryIngredients = await this.getIngredients(anniversaryIngredientsPath);
+        this._effects = await this.getEffects(effectJsonPath);
+        
+        this._baseIngredients = await this.getIngredients(baseIngredientsPath);
+        this._anniversaryIngredients = await this.getIngredients(anniversaryIngredientsPath);
 
-        this.loaded = true;
+        this._loaded = true;
     }
 }
 
