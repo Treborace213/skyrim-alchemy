@@ -1,6 +1,5 @@
 import { Ingredient } from "@/types/ingredient";
 import { getBasePath } from "@/utils/basePath";
-import TooltipWrapper from "./TooltipWrapper";
 import ModifierIcon from "./ModifierIcon";
 
 interface IngredientViewerProps {
