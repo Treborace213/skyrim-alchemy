@@ -45,7 +45,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
 
     return (
         <div>
-            <input {...getInputProps()} placeholder="Search effects..." />
+            <input {...getInputProps()} placeholder="Filter for effect..." />
             <ul {...getMenuProps()} >
                 {isOpen &&
                     filteredItems.map((item, index) => (
