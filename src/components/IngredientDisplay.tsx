@@ -1,16 +1,12 @@
 import { Ingredient } from "@/types/ingredient";
-import { getBasePath } from "@/utils/basePath";
 import ModifierIcon from "./ModifierIcon";
+import EffectProperty from "@/Enums/EffectProperty";
 
 interface IngredientViewerProps {
     ingredient: Ingredient;
 }
 
 const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
-    const magnitudeIconPath = `${getBasePath()}/images/magnitudeIcon.png`;
-    const durationIconPath = `${getBasePath()}/images/durationIcon.png`;
-    const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
-
     return (
         /*
         When changing the width styles, check the ingredient 'Thorn Hook' 
@@ -30,13 +26,13 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                 <h3>{effect.effect.name}</h3>
                                 <div className="space-x-1">
                                     {effect.magnitudeMult !== 1 && (
-                                        <ModifierIcon iconPath={magnitudeIconPath} label="Magnitude" multiplier={effect.magnitudeMult} />
+                                        <ModifierIcon effectProperty={EffectProperty.Magnitude} magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier" />
                                     )}
                                     {effect.durationMult !== 1 && (
-                                        <ModifierIcon iconPath={durationIconPath} label="Duration" multiplier={effect.durationMult} />
+                                        <ModifierIcon effectProperty={EffectProperty.Duration} magnitude={effect.durationMult} tooltipText="Duration Multiplier" />
                                     )}
                                     {effect.valueMult !== 1 && (
-                                        <ModifierIcon iconPath={valueIconPath} label="Value" multiplier={effect.valueMult} />
+                                        <ModifierIcon  effectProperty={EffectProperty.Value} magnitude={effect.valueMult} tooltipText="Value Multiplier" />
                                     )}
                                 </div>
                             </div>
