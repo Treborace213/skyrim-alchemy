@@ -1,35 +1,22 @@
 import { Effect } from "@/types/Effect";
+import PropertyIcon from "./PropertyIcon";
+import EffectProperty from "@/enums/EffectProperty";
 
 interface EffectViewerProps {
     effect: Effect;
 }
 
-interface PropertyDisplayProps {
-    descriptionText: string;
-    valueText: any;
-    isPos: boolean
-}
-
-const PropertyDisplay: React.FC<PropertyDisplayProps> = ({ descriptionText, valueText, isPos }) => {
-    return (
-        <p className={`${isPos ? "bg-pos-tint" : "bg-neg-tint"} rounded-lg px-4`}> {descriptionText}
-            <span className="font-semibold"> {valueText} </span>
-        </p>
-    );
-}
-
 const EffectDisplay: React.FC<EffectViewerProps> = ({ effect }) => {
     return (
-        <div className={`p-4 rounded-lg ${effect.isPos ? "pos" : "neg"}`}>
-            <h3 className="text-xl font-semibold">{effect.name}</h3>
-
-            <p className="mt-2">{effect.description}</p>
-            <hr className="m-2" />
-            <div className="grid grid-cols-2 gap-2 p-2">
-                <PropertyDisplay descriptionText="Base Cost:" valueText={effect.baseCost} isPos={effect.isPos} />
-                <PropertyDisplay descriptionText="Base Magnitude:" valueText={effect.baseMag} isPos={effect.isPos} />
-                <PropertyDisplay descriptionText="Base Duration:" valueText={effect.baseDur} isPos={effect.isPos} />
-                <PropertyDisplay descriptionText="Cost at 100:" valueText={effect.costAt100} isPos={effect.isPos} />
+        <div className={`px-3 py-2 rounded-lg ${effect.isPos ? "pos" : "neg"}`}>
+            <h3 className="font-bold">{effect.name}</h3>
+            <p className="my-1">{effect.description}</p>
+            <div className={`flex justify-evenly rounded-lg py-0.5
+                ${effect.isPos ? "bg-pos-tint" : "bg-neg-tint"}`}
+            >
+                <PropertyIcon effectProperty={EffectProperty.Value} seperatorText="= " magnitude={effect.baseCost} tooltipText="Base Cost" />
+                <PropertyIcon effectProperty={EffectProperty.Magnitude} seperatorText="= " magnitude={effect.baseMag} tooltipText="Base Magnitude" />
+                <PropertyIcon effectProperty={EffectProperty.Duration} seperatorText="= " magnitude={effect.baseDur} tooltipText="Base Duration" />
             </div>
         </div>
     );

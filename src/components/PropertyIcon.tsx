@@ -6,8 +6,9 @@ const magnitudeIconPath = `${getBasePath()}/images/magnitudeIcon.png`;
 const durationIconPath = `${getBasePath()}/images/durationIcon.png`;
 const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
 
-interface ModifierIconProps {
+interface PropertyIconProps {
   effectProperty: EffectProperty;
+  seperatorText?: string;
   magnitude: number;
   tooltipText: string;
 }
@@ -23,13 +24,13 @@ const getPath = (property: EffectProperty) => {
   }
 }
 
-const ModifierIcon: React.FC<ModifierIconProps> = ({ effectProperty, magnitude, tooltipText }) => (
+const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, magnitude, seperatorText, tooltipText }) => (
   <TooltipWrapper text={tooltipText}>
     <span className="space-x-1.25">
       <img src={getPath(effectProperty)} alt={`${EffectProperty} Icon`} className="w-5 h-5 inline" />
-      <span className="inline">x{magnitude}</span>
+      <span className="inline">{seperatorText}{magnitude}</span>
     </span>
   </TooltipWrapper>
 );
 
-export default ModifierIcon;
+export default PropertyIcon;

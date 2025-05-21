@@ -1,5 +1,5 @@
-import { Ingredient } from "@/types/Engredient";
-import ModifierIcon from "./ModifierIcon";
+import { Ingredient } from "@/types/Ingredient";
+import PropertyIcon from "./PropertyIcon";
 import EffectProperty from "@/enums/EffectProperty";
 
 interface IngredientViewerProps {
@@ -26,13 +26,19 @@ const IngredientBox: React.FC<IngredientViewerProps> = ({ ingredient }) => {
                                 <h3>{effect.effect.name}</h3>
                                 <div className="space-x-1">
                                     {effect.magnitudeMult !== 1 && (
-                                        <ModifierIcon effectProperty={EffectProperty.Magnitude} magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier" />
+                                        <PropertyIcon effectProperty={EffectProperty.Magnitude}
+                                            seperatorText="x" magnitude={effect.magnitudeMult} tooltipText="Magnitude Multiplier"
+                                        />
                                     )}
                                     {effect.durationMult !== 1 && (
-                                        <ModifierIcon effectProperty={EffectProperty.Duration} magnitude={effect.durationMult} tooltipText="Duration Multiplier" />
+                                        <PropertyIcon effectProperty={EffectProperty.Duration}
+                                            seperatorText="x" magnitude={effect.durationMult} tooltipText="Duration Multiplier"
+                                        />
                                     )}
                                     {effect.valueMult !== 1 && (
-                                        <ModifierIcon  effectProperty={EffectProperty.Value} magnitude={effect.valueMult} tooltipText="Value Multiplier" />
+                                        <PropertyIcon effectProperty={EffectProperty.Value}
+                                            seperatorText="x" magnitude={effect.valueMult} tooltipText="Value Multiplier"
+                                        />
                                     )}
                                 </div>
                             </div>
