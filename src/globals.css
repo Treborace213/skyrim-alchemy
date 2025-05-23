@@ -28,10 +28,8 @@
 @theme {
   --color-pos: rgb(0, 112, 0);
   --color-neg: rgb(224, 0, 0);
-  --color-pos-tint: rgb(0, 88, 0);
-  --color-neg-tint: rgb(176, 0, 0);
-  --color-pos-hlt: rgb(0, 144, 0);
-  --color-neg-hlt: rgb(252, 0, 0);
+
+  --color-darken-25: rgba(0, 0, 0, 0.25);
 }
 
 @theme inline {

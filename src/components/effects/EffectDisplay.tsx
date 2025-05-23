@@ -32,8 +32,7 @@ const EffectDisplay: React.FC<EffectViewerProps> = ({ effect }) => {
         <div className={`px-3 py-2 rounded-lg ${effect.isPos ? "pos" : "neg"}`}>
             <h3 className="font-bold">{effect.name}</h3>
             <div>{prettyDescription(effect.description)}</div>
-            <div className={`mt-1 flex justify-evenly rounded-lg py-0.5
-                ${effect.isPos ? "bg-pos-tint" : "bg-neg-tint"}`}
+            <div className={"mt-1 flex justify-evenly rounded-lg py-0.5 bg-darken-25"}
             >
                 <div><PropertyIcon effectProperty={EffectProperty.Value} tooltipText="Base Cost" /> = {effect.baseCost}</div>
                 <div><PropertyIcon effectProperty={EffectProperty.Magnitude} tooltipText="Base Magnitude" /> = {effect.baseMag}</div>
