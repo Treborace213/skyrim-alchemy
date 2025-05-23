@@ -1,11 +1,6 @@
-import { getBasePath } from "@/utils/basePath";
 import TooltipWrapper from "./TooltipWrapper";
 import EffectProperty from "@/enums/EffectProperty"
-import Image from "next/image";
-
-const magnitudeIconPath = `${getBasePath()}/images/magnitudeIcon.png`;
-const durationIconPath = `${getBasePath()}/images/durationIcon.png`;
-const valueIconPath = `${getBasePath()}/images/valueIcon.png`;
+import { ClockIcon, CurrencyDollarIcon, FireIcon} from "@heroicons/react/16/solid";
 
 interface PropertyIconProps {
   effectProperty: EffectProperty;
@@ -13,20 +8,23 @@ interface PropertyIconProps {
   className?: string;
 }
 
-const getPath = (property: EffectProperty) => {
-  switch (property) {
+
+const getIcon = (prop: EffectProperty, className: string) => {
+  className = "w-5 h-5 inline justify-center" + className
+  switch (prop) {
     case (EffectProperty.Magnitude):
-      return magnitudeIconPath;
+      return <FireIcon className={className} />;
     case (EffectProperty.Duration):
-      return durationIconPath;
+      return <ClockIcon className={className} />;
     case (EffectProperty.Value):
-      return valueIconPath;
+      return <CurrencyDollarIcon className={className} />;
   }
 }
 
 const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, tooltipText, className }) => (
+
   <TooltipWrapper text={tooltipText ?? effectProperty}>
-    <Image src={getPath(effectProperty)} alt={`${EffectProperty} Icon`} width={20} height={20} className={`inline ${className}`} />
+    {getIcon(effectProperty, className ?? "")}
   </TooltipWrapper>
 );
 
