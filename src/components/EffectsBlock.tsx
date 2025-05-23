@@ -10,7 +10,7 @@ const EffectsBlock: React.FC<EffectDisplayComponentProps> = ({ effects }) => {
   return (
     <div className="w-full flex justify-center">
       <BackToTopButton />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-2">
         {effects.map((effect, index) => (
           <EffectDisplay key={index} effect={effect} />
         ))}
