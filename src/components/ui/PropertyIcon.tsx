@@ -5,11 +5,10 @@ import { ClockIcon, CurrencyDollarIcon, FireIcon} from "@heroicons/react/16/soli
 interface PropertyIconProps {
   effectProperty: EffectProperty;
   tooltipText?: string;
-  className?: string;
 }
 
-const getIcon = (prop: EffectProperty, className: string) => {
-  className = "w-5 h-5 inline justify-center" + className
+const getIcon = (prop: EffectProperty) => {
+  const className = "w-5 h-5 inline justify-center"
   switch (prop) {
     case (EffectProperty.Magnitude):
       return <FireIcon className={className} />;
@@ -20,10 +19,10 @@ const getIcon = (prop: EffectProperty, className: string) => {
   }
 }
 
-const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, tooltipText, className }) => (
+const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, tooltipText}) => (
 
   <TooltipWrapper text={tooltipText ?? effectProperty}>
-    {getIcon(effectProperty, className ?? "")}
+    {getIcon(effectProperty)}
   </TooltipWrapper>
 );
 
