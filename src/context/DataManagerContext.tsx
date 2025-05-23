@@ -1,7 +1,7 @@
 'use client'
 
 import { DataManager, dataManager } from "@/classes/DataManager";
-import LoadingScreen from "@/components/LoadingScreen";
+import LoadingScreen from "@/components/ui/LoadingScreen";
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
 type DataManagerContextType = {

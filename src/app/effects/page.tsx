@@ -1,6 +1,6 @@
 'use client'
 
-import EffectsBlock from "@/components/EffectsBlock";
+import EffectsBlock from "@/components/effects/EffectsBlock";
 import { useDataManager } from "@/context/DataManagerContext";
 import { useMemo, useState } from "react";
 

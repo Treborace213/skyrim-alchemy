@@ -1,6 +1,6 @@
 import { Effect } from "@/types/Effect";
 import EffectDisplay from "./EffectDisplay";
-import BackToTopButton from "./BackToTopButton";
+import BackToTopButton from "../ui/BackToTopButton";
 
 interface EffectDisplayComponentProps {
   effects: Effect[];

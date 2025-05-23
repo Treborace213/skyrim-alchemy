@@ -5,8 +5,8 @@ import { Ingredient } from "@/types/Ingredient";
 import { useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
 import { Effect } from "@/types/Effect";
-import Checkbox from "../Checkbox";
-import BackToTopButton from "../BackToTopButton";
+import Checkbox from "./Checkbox";
+import BackToTopButton from "../ui/BackToTopButton";
 
 interface IngredientSearchProps {
     onResultsChange: (results: Ingredient[]) => void;

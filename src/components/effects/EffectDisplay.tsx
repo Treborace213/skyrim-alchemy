@@ -1,5 +1,5 @@
 import { Effect } from "@/types/Effect";
-import PropertyIcon from "./PropertyIcon";
+import PropertyIcon from "../ui/PropertyIcon";
 import EffectProperty from "@/enums/EffectProperty";
 import React from "react";
 

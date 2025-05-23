@@ -1,5 +1,5 @@
 import { Ingredient } from "@/types/Ingredient";
-import PropertyIcon from "./PropertyIcon";
+import PropertyIcon from "../ui/PropertyIcon";
 import EffectProperty from "@/enums/EffectProperty";
 
 interface IngredientViewerProps {
