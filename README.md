@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Skyrim Alchemy
 
-## Getting Started
+**by treborace213**  
+Hosted at: [https://treborace213.github.io/skyrim-alchemy/](https://treborace213.github.io/skyrim-alchemy/)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Skyrim Alchemy is a utility tool designed to enhance your potion-brewing experience in *The Elder Scrolls V: Skyrim*. Whether you're crafting a specific effect or trying to make the most valuable potion possible, this tool aims to make the process faster and easier.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The app is designed mobile-first but works well on desktop too. A dedicated desktop layout is planned for future updates.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Ingredient browser: view all ingredients along with their four alchemical effects and other details
+- Effect browser: view each effect, its description, and properties
+- Effect search: find ingredients that share specific effects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Feature Roadmap
 
-## Deploy on Vercel
+Coming soon:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Potion combo finder: discover ingredient combinations for specific effect combos
+- Potion strength calculator: calculate effectiveness based on your Alchemy skill, perks and equipment
+- Profit optimizer: identify the most valuable potions from selected ingredients
+- Dedicated desktop layout: improved interface for desktop users
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Feedback is welcome!
