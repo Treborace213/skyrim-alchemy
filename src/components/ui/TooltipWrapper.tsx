@@ -22,7 +22,7 @@ const TooltipWrapper: React.FC<TooltipWrapperProps> = ({ children, text }) => {
   return (
     <div ref={wrapperRef} className="relative group inline-block" onTouchStart={() => setShow(prev => !prev)}>
       {children}
-      <div className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-menu text-sm py-1 px-2 rounded ${show ? 'block' : 'hidden'} group-hover:block`}>
+      <div className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-menu text-foreground text-sm py-1 px-2 rounded ${show ? 'block' : 'hidden'} group-hover:block`}>
         {text}
       </div>
     </div>
