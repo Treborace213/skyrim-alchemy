@@ -8,7 +8,6 @@ interface PropertyIconProps {
   className?: string;
 }
 
-
 const getIcon = (prop: EffectProperty, className: string) => {
   className = "w-5 h-5 inline justify-center" + className
   switch (prop) {
