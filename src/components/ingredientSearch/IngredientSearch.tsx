@@ -72,7 +72,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
                 placeholder="Filter name"
                 value={nameInput}
                 onChange={(e) => setNameInput(e.target.value)}
-                className="rounded-md border px-2 py-0.5 bg-menu w-80 m-1"
+                className="search-bar w-80"
             />
 
             {/* Effect Search */}

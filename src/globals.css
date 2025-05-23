@@ -73,3 +73,7 @@ body {
 .w-page-min{
   width: var(--w-page-min);
 }
+
+.search-bar {
+  @apply rounded-md border px-2 py-0.5 bg-menu m-1;
+}
