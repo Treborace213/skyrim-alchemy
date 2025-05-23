@@ -5,7 +5,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold mb-4">About</h1>
         <p className="mb-3">
           Skyrim Alchemy is a tool designed to make your potion-brewing experience in Skyrim simpler.
-          Whether you're crafting a specific effect or trying to make the most valuable potion possible,
+          Whether you&apos;re crafting a specific effect or trying to make the most valuable potion possible,
           this tool aims to make the process faster and easier.
         </p>
         <p>
