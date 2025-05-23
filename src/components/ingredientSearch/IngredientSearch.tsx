@@ -69,7 +69,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
 
             {/* Name Search */}
             <input
-                placeholder="Filter Name"
+                placeholder="Filter name"
                 value={nameInput}
                 onChange={(e) => setNameInput(e.target.value)}
                 className="rounded-md border px-2 py-0.5 bg-menu w-80 m-1"
