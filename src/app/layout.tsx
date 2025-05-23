@@ -34,12 +34,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DataManagerProvider>
         <NavBar />
-        <main className="flex flex-col items-center">
-          <DataManagerProvider>
+          <main className="flex flex-col items-center">
             {children}
-          </DataManagerProvider>
-        </main>
+          </main>
+        </DataManagerProvider>
       </body>
     </html>
   );

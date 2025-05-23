@@ -1,10 +1,11 @@
 'use client'
 
 import { DataManager, dataManager } from "@/classes/DataManager";
+import LoadingScreen from "@/components/LoadingScreen";
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
 
 type DataManagerContextType = {
-        dataManager: DataManager | null;
+    dataManager: DataManager | null;
 }
 
 const DataManagerContext = createContext<DataManagerContextType | undefined>(undefined);
@@ -21,7 +22,7 @@ const DataManagerProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }
     }, [])
 
-    if (!loaded) return <div>Loading....</div>
+    if (!loaded) return (<LoadingScreen />)
 
     return (
         <DataManagerContext.Provider value={{ dataManager }}>
@@ -38,4 +39,4 @@ const useDataManager = (): DataManager => {
     return context.dataManager;
 };
 
-export {DataManagerProvider, useDataManager}
+export { DataManagerProvider, useDataManager }
