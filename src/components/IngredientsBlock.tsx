@@ -1,4 +1,4 @@
-import { Ingredient } from "@/types/Engredient";
+import { Ingredient } from "@/types/Ingredient";
 import IngredientBox from "./IngredientDisplay";
 
 interface IngredientDisplayComponentProps {

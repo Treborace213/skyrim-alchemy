@@ -1,5 +1,5 @@
 import { Effect } from "@/types/Effect";
-import { Ingredient } from "@/types/Engredient";
+import { Ingredient } from "@/types/Ingredient";
 import { IngredientEffect } from "@/types/IngredientEffect";
 import { getBasePath } from "@/utils/basePath";
 
