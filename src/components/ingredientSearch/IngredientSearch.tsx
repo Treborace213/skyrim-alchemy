@@ -1,6 +1,6 @@
 'use client'
 
-import useDataManager from "@/hooks/useDataManager";
+import { useDataManager } from "@/context/DataManagerContext";
 import { Ingredient } from "@/types/Ingredient";
 import { useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
@@ -16,36 +16,34 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
     const [nameInput, setNameInput] = useState("");
     const [selectedEffects, setSelectedEffects] = useState<(Effect | null)[]>([null, null, null, null]);
     const [includeAnniversary, setIncludeAnniversary] = useState(true);
-    const { dataManager } = useDataManager();
+    const dataManager = useDataManager();
 
     useEffect(() => {
         updateResults()
     }, [dataManager, nameInput, selectedEffects, includeAnniversary])
 
     const updateResults = () => {
-        if (dataManager) {
-            var results = dataManager.baseIngredients
+        var results = dataManager.baseIngredients
 
-            // Are AE ingredients to be included?
-            if (includeAnniversary) {
-                results = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
-                results.sort((a, b) => a.name.localeCompare(b.name));
-            }
-
-            // Filter by name
-            results = results.filter((e) => e.name.toLowerCase().includes(nameInput.toLowerCase()));
-
-            // Filter by selected effects
-            results = results.filter((ingredient) =>
-                selectedEffects
-                    .filter((selectedEffect) => selectedEffect != null)
-                    .every((selectedEffect) =>
-                        ingredient.effects.some((effect: { effect: Effect; }) => effect.effect === selectedEffect)
-                    )
-            );
-
-            onResultsChange(results);
+        // Are AE ingredients to be included?
+        if (includeAnniversary) {
+            results = dataManager.baseIngredients.concat(dataManager.anniversaryIngredients)
+            results.sort((a, b) => a.name.localeCompare(b.name));
         }
+
+        // Filter by name
+        results = results.filter((e) => e.name.toLowerCase().includes(nameInput.toLowerCase()));
+
+        // Filter by selected effects
+        results = results.filter((ingredient) =>
+            selectedEffects
+                .filter((selectedEffect) => selectedEffect != null)
+                .every((selectedEffect) =>
+                    ingredient.effects.some((effect: { effect: Effect; }) => effect.effect === selectedEffect)
+                )
+        );
+
+        onResultsChange(results);
     }
 
     const updateSelectedEffects = (effectIndex: number, newEffect: Effect | null) => {

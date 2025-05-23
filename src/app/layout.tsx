@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "@/globals.css";
 import NavBar from "@/components/Navbar";
 import { getBasePath } from "@/utils/basePath";
+import { DataManagerProvider } from "@/context/DataManagerContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,9 @@ export default function RootLayout({
       >
         <NavBar />
         <main className="flex flex-col items-center">
-          {children}
+          <DataManagerProvider>
+            {children}
+          </DataManagerProvider>
         </main>
       </body>
     </html>

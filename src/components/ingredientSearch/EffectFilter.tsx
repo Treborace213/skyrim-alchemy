@@ -1,6 +1,6 @@
 import { useCombobox } from "downshift";
 import { useEffect, useMemo, useState } from "react";
-import useDataManager from "@/hooks/useDataManager";
+import { useDataManager } from "@/context/DataManagerContext";
 import { Effect } from "@/types/Effect";
 
 interface EffectFilterProps {
@@ -8,10 +8,10 @@ interface EffectFilterProps {
 }
 
 const EffectFilter: React.FC<EffectFilterProps> = ({ onSubmit }) => {
-    const { dataManager } = useDataManager();
+    const dataManager = useDataManager();
     const [inputValue, setInputValue] = useState("");
 
-    const allItems: Effect[] = dataManager?.effects ?? [];
+    const allItems: Effect[] = dataManager.effects;
 
     // Sync onChange with exact effect match from input (if any found, else null).
     useEffect(() => {
