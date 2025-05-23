@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Skyrim Alchemy",
-  description: "A tool to help with Alchemy in Skyrim",
+  description: "Enhance your potion-brewing in Skyrim with Skyrim Alchemy.",
   icons: {
     icon: `${getBasePath()}/favicon.ico`
   }
