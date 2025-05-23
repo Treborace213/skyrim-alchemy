@@ -4,10 +4,10 @@ import useDataManager from "@/hooks/useDataManager";
 import { Effect } from "@/types/Effect";
 
 interface EffectFilterProps {
-    onChange: (results: Effect | null) => void;
+    onSubmit: (results: Effect | null) => void;
 }
 
-const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
+const EffectFilter: React.FC<EffectFilterProps> = ({ onSubmit }) => {
     const { dataManager } = useDataManager();
     const [inputValue, setInputValue] = useState("");
 
@@ -19,7 +19,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onChange }) => {
             (effect) => effect.name.toLowerCase() === inputValue.toLowerCase()
         ) ?? null;
 
-        onChange(effect);
+        onSubmit(effect);
     }, [inputValue])
 
     const filteredItems = useMemo(() => {
