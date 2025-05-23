@@ -1,7 +1,7 @@
 'use client'
 
 import useDataManager from "@/hooks/useDataManager";
-import { Ingredient } from "@/types/Engredient";
+import { Ingredient } from "@/types/Ingredient";
 import { useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
 import { Effect } from "@/types/Effect";
@@ -40,7 +40,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
                 selectedEffects
                     .filter((selectedEffect) => selectedEffect != null)
                     .every((selectedEffect) =>
-                        ingredient.effects.some((effect) => effect.effect === selectedEffect)
+                        ingredient.effects.some((effect: { effect: Effect; }) => effect.effect === selectedEffect)
                     )
             );
 
