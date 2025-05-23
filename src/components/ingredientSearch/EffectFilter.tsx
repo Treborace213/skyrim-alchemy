@@ -1,32 +1,31 @@
 import { useCombobox } from "downshift";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useDataManager } from "@/context/DataManagerContext";
 import { Effect } from "@/types/Effect";
 
 interface EffectFilterProps {
-    onSubmit: (results: Effect | null) => void;
+    returnedEffect: (results: Effect | null) => void;
 }
 
-const EffectFilter: React.FC<EffectFilterProps> = ({ onSubmit }) => {
+const EffectFilter: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
     const dataManager = useDataManager();
     const [inputValue, setInputValue] = useState("");
 
-    const allItems: Effect[] = dataManager.effects;
+    const setInputAndSyncEffect = (value: string) => {
+        setInputValue(value)
 
-    // Sync onChange with exact effect match from input (if any found, else null).
-    useEffect(() => {
-        const effect = allItems.find(
-            (effect) => effect.name.toLowerCase() === inputValue.toLowerCase()
+        const effect = dataManager.effects.find(
+            (effect) => effect.name.toLowerCase() === value.toLowerCase()
         ) ?? null;
 
-        onSubmit(effect);
-    }, [inputValue])
+        returnedEffect(effect);
+    }
 
     const filteredItems = useMemo(() => {
-        return allItems.filter((effect) =>
+        return dataManager.effects.filter((effect) =>
             effect.name.toLowerCase().includes(inputValue.toLowerCase())
         );
-    }, [allItems, inputValue]);
+    }, [inputValue, dataManager.effects]);
 
     const {
         isOpen,
@@ -38,8 +37,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ onSubmit }) => {
         items: filteredItems,
         inputValue,
         onInputValueChange: ({ inputValue }) => {
-            const value = inputValue;
-            setInputValue(value);
+            setInputAndSyncEffect(inputValue)
         },
         itemToString: (item) => item?.name ?? "",
     });

@@ -1,6 +1,7 @@
 import { getBasePath } from "@/utils/basePath";
 import TooltipWrapper from "./TooltipWrapper";
 import EffectProperty from "@/enums/EffectProperty"
+import Image from "next/image";
 
 const magnitudeIconPath = `${getBasePath()}/images/magnitudeIcon.png`;
 const durationIconPath = `${getBasePath()}/images/durationIcon.png`;
@@ -25,7 +26,7 @@ const getPath = (property: EffectProperty) => {
 
 const PropertyIcon: React.FC<PropertyIconProps> = ({ effectProperty, tooltipText, className }) => (
   <TooltipWrapper text={tooltipText ?? effectProperty}>
-    <img src={getPath(effectProperty)} alt={`${EffectProperty} Icon`} className={`w-5 h-5 inline ${className}`} />
+    <Image src={getPath(effectProperty)} alt={`${EffectProperty} Icon`} width={20} height={20} className={`inline ${className}`} />
   </TooltipWrapper>
 );
 

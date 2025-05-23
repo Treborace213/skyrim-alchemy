@@ -2,7 +2,7 @@
 
 import { useDataManager } from "@/context/DataManagerContext";
 import { Ingredient } from "@/types/Ingredient";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import EffectFilter from "./EffectFilter";
 import { Effect } from "@/types/Effect";
 import Checkbox from "./Checkbox";
@@ -18,12 +18,8 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
     const [includeAnniversary, setIncludeAnniversary] = useState(true);
     const dataManager = useDataManager();
 
-    useEffect(() => {
-        updateResults()
-    }, [dataManager, nameInput, selectedEffects, includeAnniversary])
-
-    const updateResults = () => {
-        var results = dataManager.baseIngredients
+    const updateResults = useCallback(() => {
+        let results = dataManager.baseIngredients
 
         // Are AE ingredients to be included?
         if (includeAnniversary) {
@@ -42,12 +38,15 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
                     ingredient.effects.some((effect: { effect: Effect; }) => effect.effect === selectedEffect)
                 )
         );
-
         onResultsChange(results);
-    }
+    }, [onResultsChange, dataManager, nameInput, selectedEffects, includeAnniversary]);
+
+    useEffect(() => {
+        updateResults();
+    }, [updateResults])
 
     const updateSelectedEffects = (effectIndex: number, newEffect: Effect | null) => {
-        var effectList = [...selectedEffects];
+        const effectList = [...selectedEffects];
         effectList[effectIndex] = newEffect;
         setSelectedEffects(effectList);
     }
@@ -76,7 +75,7 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             {/* Effect Search */}
             <div className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center">
                 {selectedEffects.map((_, index) => (
-                    <EffectFilter key={index} onSubmit={(newEffect) => updateSelectedEffects(index, newEffect)} />
+                    <EffectFilter key={index} returnedEffect={(newEffect) => updateSelectedEffects(index, newEffect)} />
                 ))}
             </div>
         </div>

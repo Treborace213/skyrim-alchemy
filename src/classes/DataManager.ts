@@ -56,7 +56,7 @@ export class DataManager {
         return this._loaded;
     }
 
-    private async fetchAndMapData<T>(filePath: string, mapFn: (item: any) => T): Promise<T[]> {
+    private async fetchAndMapData<T, U>(filePath: string, mapFn: (item: T) => U): Promise<U[]> {
         try {
             const response = await fetch(filePath);
             if (!response.ok) {
