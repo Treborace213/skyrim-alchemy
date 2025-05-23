@@ -15,12 +15,12 @@ export default function EffectsPage() {
     if (!dataManager) return <div>Loading...</div>
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-page-min gap-4">
             <input
                 placeholder="Filter effect"
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
-                className="search-bar w-min-80 w-8/10"
+                className="search-bar w-min-80 w-full"
             />
 
             <EffectsBlock effects={effectList} />
