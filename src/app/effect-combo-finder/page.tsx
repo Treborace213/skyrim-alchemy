@@ -1,6 +1,6 @@
 'use client'
 
-import EffectSelectorBlock from "@/components/search/EffectSelctorBlock";
+import EffectSelectorBlock from "@/components/search/EffectSelectorBlock";
 import { Effect } from "@/types/Effect";
 import { useState } from "react";
 

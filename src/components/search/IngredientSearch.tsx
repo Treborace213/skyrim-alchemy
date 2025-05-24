@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Effect } from "@/types/Effect";
 import Checkbox from "./Checkbox";
 import BackToTopButton from "../ui/BackToTopButton";
-import EffectSelector from "./EffectSelctorBlock";
+import EffectSelector from "./EffectSelectorBlock";
 
 interface IngredientSearchProps {
     onResultsChange: (results: Ingredient[]) => void;
