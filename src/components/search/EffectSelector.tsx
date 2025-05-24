@@ -1,20 +1,19 @@
 import { useCombobox } from "downshift";
 import { useMemo, useState } from "react";
-import { useDataManager } from "@/context/DataManagerContext";
 import { Effect } from "@/types/Effect";
 
-interface EffectFilterProps {
+interface EffectSelectorProps {
+    effectsToList : Effect[];
     returnedEffect: (results: Effect | null) => void;
 }
 
-const EffectSelector: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
-    const dataManager = useDataManager();
+const EffectSelector: React.FC<EffectSelectorProps> = ({ effectsToList, returnedEffect }) => {
     const [inputValue, setInputValue] = useState("");
 
     const setInputAndSyncEffect = (value: string) => {
         setInputValue(value)
 
-        const effect = dataManager.effects.find(
+        const effect = effectsToList.find(
             (effect) => effect.name.toLowerCase() === value.toLowerCase()
         ) ?? null;
 
@@ -22,10 +21,10 @@ const EffectSelector: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
     }
 
     const filteredItems = useMemo(() => {
-        return dataManager.effects.filter((effect) =>
+        return effectsToList.filter((effect) =>
             effect.name.toLowerCase().includes(inputValue.toLowerCase())
         );
-    }, [inputValue, dataManager.effects]);
+    }, [inputValue, effectsToList]);
 
     const {
         isOpen,
@@ -43,7 +42,7 @@ const EffectSelector: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
     });
 
     return (
-        <div className="m-1 w-8/10">
+        <div className="m-1 w-full">
             <input
                 {...getInputProps()}
                 placeholder="Select effect"

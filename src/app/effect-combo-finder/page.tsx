@@ -9,7 +9,7 @@ export default function PotionFinderPage() {
 
     return (
         <div>
-            <EffectSelectorBlock onChange={(e) => setSelectedEffects(e)}/>
+            <EffectSelectorBlock onChange={(e) => setSelectedEffects(e)} size={6} />
         </div>
     );
 }

@@ -1,15 +1,21 @@
 import { Effect } from "@/types/Effect"
-import EffectFilter from "./EffectSelector"
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import EffectSelector from "./EffectSelector";
+import { PlusIcon, XCircleIcon } from "@heroicons/react/16/solid";
+import { useDataManager } from "@/context/DataManagerContext";
 
 interface EffectSelectorBlockProps {
     onChange: (selectedEffects: (Effect | null)[]) => void;
-    size?: number;
-    className?: string;
+    size: number;
 }
 
-const EffectSelectorBlock: React.FC<EffectSelectorBlockProps> = ({ onChange, size = 1, className }) => {
+const EffectSelectorBlock: React.FC<EffectSelectorBlockProps> = ({ onChange, size }) => {
+    const dataManager = useDataManager();
     const [selectedEffects, setSelectedEffects] = useState<(Effect | null)[]>(() => Array(size).fill(null))
+
+    const effectsToList = useMemo(() => {
+        return dataManager.effects.filter((effect) => !selectedEffects.includes(effect));
+    }, [selectedEffects])
 
     const handleEffectChange = (index: number, newEffect: Effect | null) => {
         const updated = [...selectedEffects];
@@ -19,9 +25,11 @@ const EffectSelectorBlock: React.FC<EffectSelectorBlockProps> = ({ onChange, siz
     };
 
     return (
-        <div className={className ?? ""}>
+        <div className={"bg-menu pt-2 pb-3.5 px-7 m-1 border rounded-lg w-75"}>
             {selectedEffects.map((_, index) => (
-                <EffectFilter key={index} returnedEffect={(e) => handleEffectChange(index, e)} />
+                <div key={index} className="flex items-center">
+                    <EffectSelector effectsToList={effectsToList} returnedEffect={(e) => handleEffectChange(index, e)} />
+                </div>
             ))}
         </div>
     )

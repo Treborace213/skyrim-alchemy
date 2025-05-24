@@ -70,7 +70,6 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             <EffectSelector
                 size={4}
                 onChange={(e) => setSelectedEffects(e)}
-                className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center"
             />
         </div>
     );

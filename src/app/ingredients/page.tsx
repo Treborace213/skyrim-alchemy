@@ -1,7 +1,7 @@
 'use client'
 
 import IngredientsBlock from "@/components/ingredients/IngredientsBlock";
-import IngredientSearch from "@/components/search/ingredientSearch";
+import IngredientSearch from "@/components/search/IngredientSearch";
 import { useState } from "react";
 import { Ingredient } from "@/types/Ingredient";
 
