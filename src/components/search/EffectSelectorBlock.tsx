@@ -1,7 +1,6 @@
 import { Effect } from "@/types/Effect"
 import { useMemo, useState } from "react";
 import EffectSelector from "./EffectSelector";
-import { PlusIcon, XCircleIcon } from "@heroicons/react/16/solid";
 import { useDataManager } from "@/context/DataManagerContext";
 
 interface EffectSelectorBlockProps {
