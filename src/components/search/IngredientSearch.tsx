@@ -3,10 +3,10 @@
 import { useDataManager } from "@/context/DataManagerContext";
 import { Ingredient } from "@/types/Ingredient";
 import { useCallback, useEffect, useState } from "react";
-import EffectFilter from "./EffectSelector";
 import { Effect } from "@/types/Effect";
 import Checkbox from "./Checkbox";
 import BackToTopButton from "../ui/BackToTopButton";
+import EffectSelector from "./EffectSelctorBlock";
 
 interface IngredientSearchProps {
     onResultsChange: (results: Ingredient[]) => void;
@@ -45,12 +45,6 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
         updateResults();
     }, [updateResults])
 
-    const updateSelectedEffects = (effectIndex: number, newEffect: Effect | null) => {
-        const effectList = [...selectedEffects];
-        effectList[effectIndex] = newEffect;
-        setSelectedEffects(effectList);
-    }
-
     return (
         <div className="flex flex-col items-center">
             <BackToTopButton />
@@ -73,11 +67,11 @@ const IngredientSearch: React.FC<IngredientSearchProps> = ({ onResultsChange }) 
             />
 
             {/* Effect Search */}
-            <div className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center">
-                {selectedEffects.map((_, index) => (
-                    <EffectFilter key={index} returnedEffect={(newEffect) => updateSelectedEffects(index, newEffect)} />
-                ))}
-            </div>
+            <EffectSelector
+                size={4}
+                onChange={(e) => setSelectedEffects(e)}
+                className="bg-menu p-2 pb-3.5 m-1 border rounded-lg min-w-75 w-1/3 flex flex-col items-center"
+            />
         </div>
     );
 }

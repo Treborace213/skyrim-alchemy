@@ -7,7 +7,7 @@ interface EffectFilterProps {
     returnedEffect: (results: Effect | null) => void;
 }
 
-const EffectFilter: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
+const EffectSelector: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
     const dataManager = useDataManager();
     const [inputValue, setInputValue] = useState("");
 
@@ -69,4 +69,4 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
     );
 };
 
-export default EffectFilter;
+export default EffectSelector;

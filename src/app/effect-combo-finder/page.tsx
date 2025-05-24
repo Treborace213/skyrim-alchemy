@@ -1,21 +1,15 @@
 'use client'
 
-import EffectSelector from "@/components/effectComboFinder/EffectSelction";
-import { useDataManager } from "@/context/DataManagerContext";
+import EffectSelectorBlock from "@/components/search/EffectSelctorBlock";
 import { Effect } from "@/types/Effect";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-export default function potionFinderPage() {
-    const dataManager = useDataManager();
+export default function PotionFinderPage() {
     const [selectedEffects, setSelectedEffects] = useState<(Effect | null)[]>([])
-
-    useEffect(() => {
-        console.log(selectedEffects[0]);
-    }, [selectedEffects])
 
     return (
         <div>
-            <EffectSelector  onChange={(e) => setSelectedEffects(e)}/>
+            <EffectSelectorBlock onChange={(e) => setSelectedEffects(e)}/>
         </div>
     );
 }
