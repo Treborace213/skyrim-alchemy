@@ -3,7 +3,7 @@
 import { useDataManager } from "@/context/DataManagerContext";
 import { Ingredient } from "@/types/Ingredient";
 import { useCallback, useEffect, useState } from "react";
-import EffectFilter from "./EffectFilter";
+import EffectFilter from "./EffectSelector";
 import { Effect } from "@/types/Effect";
 import Checkbox from "./Checkbox";
 import BackToTopButton from "../ui/BackToTopButton";

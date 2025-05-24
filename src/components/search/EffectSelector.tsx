@@ -46,7 +46,7 @@ const EffectFilter: React.FC<EffectFilterProps> = ({ returnedEffect }) => {
         <div className="m-1 w-8/10">
             <input
                 {...getInputProps()}
-                placeholder="Filter effect"
+                placeholder="Select effect"
                 className="border-b-1 w-full"
             />
             <ul
